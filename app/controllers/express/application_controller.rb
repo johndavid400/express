@@ -2,7 +2,7 @@ module Express
   class ApplicationController < ActionController::Base
     protect_from_forgery with: :exception
 
-    layout 'admin'
+    #layout 'admin'
     before_action :verify_admin, :set_container
 
     def verify_admin

@@ -1,6 +1,6 @@
-class CreateEntryTypes < ActiveRecord::Migration[5.1]
+class CreateChannels < ActiveRecord::Migration[5.1]
   def change
-    create_table :entry_types do |t|
+    create_table :channels do |t|
       t.string :title
       t.string :slug, unique: true
       t.text :description

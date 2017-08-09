@@ -1,5 +1,5 @@
 %h1.left Listing Settings
-= link_to 'New Entry', new_admin_setting_path, :class => "right btn btn-default"
+= link_to 'New Entry', express.new_setting_path, :class => "right btn btn-default"
 
 %table.table.table-striped.table-bordered
   %thead
@@ -12,8 +12,8 @@
   %tbody
     - @settings.each do |setting|
       %tr
-        %td= link_to setting.name, edit_admin_setting_path(setting)
+        %td= link_to setting.name, express.edit_setting_path(setting)
         %td= setting.slug
         %td= setting.options.map{|s| s.values.first }.join(", ")
-        %td= link_to fa_icon("times"), admin_setting_path(setting), method: :delete, class: "red", data: { confirm: 'Are you sure?' }
+        %td= link_to fa_icon("times"), express.setting_path(setting), method: :delete, class: "red", data: { confirm: 'Are you sure?' }
 

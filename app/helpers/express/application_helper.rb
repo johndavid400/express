@@ -1,5 +1,6 @@
 module Express
   module ApplicationHelper
+    include FontAwesome::Rails::IconHelper
 
     def statuses
       [

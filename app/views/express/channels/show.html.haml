@@ -25,6 +25,6 @@
   %b Attachment size:
   = @channel.attachment_size
 
-= link_to 'Edit', edit_admin_channel_path(@channel)
+= link_to 'Edit', express.edit_channel_path(@channel)
 \|
-= link_to 'Back', admin_channels_path
+= link_to 'Back', express.channels_path

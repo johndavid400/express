@@ -1,4 +1,4 @@
-= form_for [:admin, @channel], :html => {:multipart => true} do |f|
+= form_for [@channel], :html => {:multipart => true} do |f|
   - if @channel.errors.any?
     #error_explanation
       %h2= "#{pluralize(@channel.errors.count, "error")} prohibited this channel from being saved:"

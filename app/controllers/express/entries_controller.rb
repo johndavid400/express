@@ -6,7 +6,6 @@ class Express::EntriesController < Express::ApplicationController
   # GET /entries
   # GET /entries.json
   def index
-    binding.pry
     @entries = Entry.order(:created_at)
     @entries = @entries.where(channel_id: params[:channel]) if params[:channel].present?
   end

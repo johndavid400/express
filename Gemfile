@@ -14,13 +14,13 @@ gemspec
 # gem 'byebug', group: [:development, :test]
 
 
-gem 'haml-rails'
-gem 'jquery-rails'
-gem 'jquery-ui-rails'
-gem 'pry-rails'
-gem 'faraday'
-gem 'rspec-rails'
-gem 'friendly_id', '~> 5.1.0'
-gem 'dragonfly', '~> 1.1.3'
-gem "font-awesome-rails"
-
+#gem 'haml-rails'
+#gem 'jquery-rails'
+#gem 'jquery-ui-rails'
+#gem 'pry-rails'
+#gem 'faraday'
+#gem 'rspec-rails'
+#gem 'friendly_id', '~> 5.1.0'
+#gem 'dragonfly', '~> 1.1.3'
+#gem "font-awesome-rails"
+#
