@@ -1,0 +1,100 @@
+
+// Custom styles
+
+.admin {
+
+  .admin-nav {
+    margin-top: 20px;
+  }
+
+  .entry-img {
+    margin: 20px 0px;
+  }
+
+  .right {
+    float: right;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .entry-img {
+    width: 300px;
+  }
+
+  .well {
+    hr {
+      color: gray;
+    }
+  }
+
+  .field {
+    margin: 0px 0px 15px 0px;
+  }
+
+  .custom-fields {
+    display: block;
+
+    input {
+      width: 100%;
+    }
+
+    .field-type {
+      width: 28%;
+      display: inline-block;
+    }
+
+    .field-type-2 {
+      width: auto;
+      display: inline-block;
+    }
+
+    .field-type-3 {
+      width: auto;
+      display: inline-block;
+    }
+
+  }
+
+  .label-tag {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  input[type=radio], input[type=checkbox] {
+    top: 0px;
+  }
+
+  .red {
+    color: #ff0000;
+  }
+
+  .admin {
+    table {
+      width: 100%;
+    }
+    .right {
+      float: right;
+    }
+    .left {
+      float: left;
+    }
+  }
+
+  .pad-left {
+    margin-left: 20px;
+  }
+
+  #map {
+    height: 608px;
+    border-top: 4px solid #e3e3e3;
+    border-bottom: 4px solid #e3e3e3
+  }
+
+  .radio {
+    display: inline-block;
+  }
+}
