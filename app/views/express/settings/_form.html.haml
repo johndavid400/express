@@ -1,0 +1,32 @@
+= form_for [:admin, @setting] do |f|
+  - if @setting.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@setting.errors.count, "error")} prohibited this setting from being saved:"
+      %ul
+        - @setting.errors.full_messages.each do |message|
+          %li= message
+
+  .row
+    .col-md-6
+      .form-group
+        .label-tag Name
+        = f.text_field :name, :class => "form-control"
+    .col-md-6
+      .form-group
+        .label-tag Slug
+        = f.text_field :slug, :class => "form-control"
+    .col-md-12
+      .form-group
+        .label-tag Description
+        = f.text_area :description, :class => "form-control"
+
+    .col-md-12
+      .label-tag Options
+      .well
+        .custom-fields
+          - @setting.options.each do |cf|
+            = render 'custom_form_field', data: cf
+          = render 'custom_form_field', data: {}
+
+      .actions
+        = f.submit 'Save', :class => "btn btn-primary"

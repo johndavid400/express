@@ -1,0 +1,33 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @entry.title
+%p
+  %b Slug:
+  = @entry.slug
+%p
+  %b Description:
+  = @entry.description
+%p
+  %b Data:
+  = @entry.data
+%p
+  %b Status:
+  = @entry.status
+%p
+  %b Open:
+  = @entry.open
+%p
+  %b Close:
+  = @entry.close
+%p
+  %b User:
+  = @entry.user_id
+%p
+  %b Type:
+  = @entry.channel
+
+= link_to 'Edit', edit_admin_entry_path(@entry)
+\|
+= link_to 'Back', admin_entries_path

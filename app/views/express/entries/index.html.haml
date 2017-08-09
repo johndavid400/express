@@ -1,0 +1,29 @@
+%h1.left
+  = params[:channel].present? ? Channel.find(params[:channel]).title : "All"
+  Entries
+
+.right
+  - Channel.order(:title).each do |s|
+    = link_to s.title.pluralize, admin_entries_path(channel: s.id), :class => "btn btn-warning"
+  = link_to 'New Entry', new_admin_entry_path(channel_id: params[:channel]), :class => "btn btn-default pad-left"
+
+%table.table.table-striped.table-bordered
+  %thead
+    %tr
+      %th Title
+      %th Slug
+      %th Status
+      %th User
+      %th Channel
+      %th
+
+  %tbody
+    - @entries.each do |entry|
+      %tr
+        %td= link_to entry.title, edit_admin_entry_path(entry)
+        %td= entry.slug
+        %td= entry.status
+        %td= entry.user_id
+        %td= entry.channel
+        %td= link_to fa_icon("times"), admin_entry_path(entry), method: :delete, class: "red", data: { confirm: 'Are you sure?' }
+

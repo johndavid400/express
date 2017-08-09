@@ -1,0 +1,40 @@
+= form_for [:admin, @channel], :html => {:multipart => true} do |f|
+  - if @channel.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@channel.errors.count, "error")} prohibited this channel from being saved:"
+      %ul
+        - @channel.errors.full_messages.each do |message|
+          %li= message
+
+  .row
+    .col-md-6
+      .form-group
+        .label-tag Title
+        = f.text_field :title, :class => "form-control"
+    .col-md-6
+      .form-group
+        .label-tag Slug
+        = f.text_field :slug, :class => "form-control"
+    .col-md-12
+      .form-group
+        .label-tag Description
+        = f.text_area :description, :class => "form-control"
+      .form-group
+        .label-tag Status
+        = f.select :status, options_for_select(statuses), :class => "form-control"
+      .form-group
+        .label-tag Attachment
+        = f.file_field :attachment, :class => "form-control"
+      .entry-img
+        = image_tag @channel.attachment.thumb('200x200!').url if @channel.attachment_stored?
+    .col-md-12
+      = label_tag "Custom Fields"
+      .well
+        .custom-fields
+          - @channel.custom_fields.each do |cf|
+            .custom-field
+              = render 'custom_form_field', data: cf
+          .custom-field
+            = render 'custom_form_field', data: {}
+  .actions
+    = f.submit 'Save', :class => "btn btn-primary"

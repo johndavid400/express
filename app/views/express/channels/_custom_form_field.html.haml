@@ -1,0 +1,28 @@
+.row
+  .col-md-5
+    .row
+      .col-md-6
+        .label-tag Field Name
+        = text_field_tag "channel[data][custom_fields][][name]", data["name"], :class => "form-control"
+      .col-md-6
+        .label-tag Field Key
+        = text_field_tag "channel[data][custom_fields][][key]", data["key"], :class => "form-control"
+  .col-md-7
+    .row
+      .col-md-4
+        .form-group
+          .label-tag Field Type
+          = select_tag "channel[data][custom_fields][][type]", options_for_select(field_types, selected: data["type"]), :class => "form-control"
+      .col-md-4
+        .form-group
+          .label-tag Collection
+          = select_tag "channel[data][custom_fields][][collection]", options_from_collection_for_select(Setting.all, :id, :name, selected: data["collection"]), include_blank: true, :class => "form-control"
+      .col-md-2
+        .form-group
+          .label-tag Required
+          = select_tag "channel[data][custom_fields][][required]", options_for_select([false, true], selected: data["required"]), :class => "form-control"
+      .col-md-1
+        .form-group
+          .label-tag Remove
+          = link_to fa_icon("times"), "#", remote: true, :class => "red disable"
+

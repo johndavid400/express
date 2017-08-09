@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @channel.title
+%p
+  %b Slug:
+  = @channel.slug
+%p
+  %b Description:
+  = @channel.description
+%p
+  %b Data:
+  = @channel.data
+%p
+  %b Status:
+  = @channel.status
+%p
+  %b Attachment uid:
+  = @channel.attachment_uid
+%p
+  %b Attachment name:
+  = @channel.attachment_name
+%p
+  %b Attachment size:
+  = @channel.attachment_size
+
+= link_to 'Edit', edit_admin_channel_path(@channel)
+\|
+= link_to 'Back', admin_channels_path

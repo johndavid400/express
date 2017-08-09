@@ -1,0 +1,10 @@
+.fieldset
+  .row
+    .col-md-6
+      .form-group
+        .label-tag Option Key
+        = text_field_tag "setting[data][options][][key]", data["key"], :class => "form-control"
+    .col-md-6
+      .form-group
+        .label-tag Option Value
+        = text_field_tag "setting[data][options][][value]", data["value"], :class => "form-control"

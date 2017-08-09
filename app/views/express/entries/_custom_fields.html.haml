@@ -1,0 +1,28 @@
+.row
+  .col-md-6
+    .field
+      .label-tag= cf["name"]
+
+      - if cf["type"] == "select"
+        = send("#{cf['type']}_tag", "entry[data][#{cf['key']}]", options_for_select(Setting.find(cf['collection']).option_values, selected: @entry.get_data(cf['key'])), required: ActiveModel::Type::Boolean.new.cast(cf['required']), :class => "form-control")
+
+      - elsif cf["type"] == "check_box"
+        - Setting.find(cf['collection']).options.each do |value|
+          .field-group
+            = send("#{cf['type']}_tag", "entry[data][#{cf['key']}][]", value["value"], @entry.get_data(cf['key']).include?(value["value"]), required: ActiveModel::Type::Boolean.new.cast(cf['required']))
+            .label-tag= value['key']
+
+      - elsif cf["type"] == "radio_button"
+        - Setting.find(cf['collection']).options.each do |value|
+          .field-group
+            = send("#{cf['type']}_tag", "entry[data][#{cf['key']}]", value["value"], @entry.get_data(cf['key']) == value["value"], required: ActiveModel::Type::Boolean.new.cast(cf['required']))
+            .label-tag= value['key']
+
+      - elsif cf["type"] == "file_field"
+        = send("#{cf['type']}_tag", "entry[uploads][#{cf['key']}]", required: ActiveModel::Type::Boolean.new.cast(cf['required']), :class => "form-control")
+        = hidden_field_tag "entry[data][#{cf['key']}]", @entry.send(cf['key']) if @entry.send(cf['key']).present?
+        .entry-img
+          = image_tag @entry.find_upload(cf['key']).attachment.thumb('x200').url if @entry.find_upload(cf['key']).present? rescue "Image Failed"
+
+      - else
+        = send("#{cf['type']}_tag", "entry[data][#{cf['key']}]", @entry.get_data(cf['key']), required: ActiveModel::Type::Boolean.new.cast(cf['required']), :class => "form-control")
