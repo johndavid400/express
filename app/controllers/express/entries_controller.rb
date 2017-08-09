@@ -31,7 +31,7 @@ class Express::EntriesController < Express::ApplicationController
 
     respond_to do |format|
       if @entry.save
-        format.html { redirect_to edit_admin_entry_path(@entry), notice: 'Entry was successfully created.' }
+        format.html { redirect_to express.edit_entry_path(@entry), notice: 'Entry was successfully created.' }
         format.json { render :show, status: :created, location: @entry }
       else
         format.html { render :new }
@@ -45,7 +45,7 @@ class Express::EntriesController < Express::ApplicationController
   def update
     respond_to do |format|
       if @entry.update(entry_params)
-        format.html { redirect_to edit_admin_entry_path(@entry), notice: 'Entry was successfully updated.' }
+        format.html { redirect_to express.edit_entry_path(@entry), notice: 'Entry was successfully updated.' }
         format.json { render :show, status: :ok, location: @entry }
       else
         format.html { render :edit }
@@ -59,7 +59,7 @@ class Express::EntriesController < Express::ApplicationController
   def destroy
     @entry.destroy
     respond_to do |format|
-      format.html { redirect_to admin_entries_url, notice: 'Entry was successfully destroyed.' }
+      format.html { redirect_to express.entries_url, notice: 'Entry was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

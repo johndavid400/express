@@ -13,7 +13,7 @@ module Express
     require "font-awesome-rails"
 
     initializer "express.assets.precompile" do |app|
-      app.config.assets.precompile += %w( express/application.scss )
+      app.config.assets.precompile += %w( logo.png express/application.scss )
     end
 
   end

@@ -29,7 +29,7 @@ class Express::SettingsController < Express::ApplicationController
 
     respond_to do |format|
       if @setting.save
-        format.html { redirect_to edit_admin_setting_path(@setting), notice: 'Setting was successfully created.' }
+        format.html { redirect_to express.edit_setting_path(@setting), notice: 'Setting was successfully created.' }
         format.json { render :show, status: :created, location: @setting }
       else
         format.html { render :new }
@@ -43,7 +43,7 @@ class Express::SettingsController < Express::ApplicationController
   def update
     respond_to do |format|
       if @setting.update(setting_params)
-        format.html { redirect_to edit_admin_setting_path(@setting), notice: 'Setting was successfully updated.' }
+        format.html { redirect_to express.edit_setting_path(@setting), notice: 'Setting was successfully updated.' }
         format.json { render :show, status: :ok, location: @setting }
       else
         format.html { render :edit }
@@ -57,7 +57,7 @@ class Express::SettingsController < Express::ApplicationController
   def destroy
     @setting.destroy
     respond_to do |format|
-      format.html { redirect_to admin_settings_url, notice: 'Setting was successfully destroyed.' }
+      format.html { redirect_to express.settings_url, notice: 'Setting was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

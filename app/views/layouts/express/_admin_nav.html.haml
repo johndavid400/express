@@ -1,0 +1,12 @@
+.admin-nav
+  .row
+    .col-md-4
+      = link_to image_tag('logo.png', size: "300x50"), express.entries_path
+    .col-md-8
+      .right
+        = link_to "Entries", express.entries_path, :class => "btn btn-primary"
+        = link_to "Channels", express.channels_path, :class => "btn btn-primary"
+        = link_to "Settings", express.settings_path, :class => "btn btn-primary"
+    .col-md-12
+      %hr
+
