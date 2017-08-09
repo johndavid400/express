@@ -2,11 +2,17 @@
 A headless CMS for generating and organizing content.
 
 Rails 5
+
 Ruby 2.3
+
 Postgres
+
 Haml
+
 Dragonfly
+
 Friendly ID
+
 Fontawesome
 
 ## Usage
