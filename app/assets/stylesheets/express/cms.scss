@@ -2,6 +2,7 @@
 
 $gray: #f3f3f3;
 $border-gray: #dcdcdc;
+$green: rgba(87, 196, 51, 1.0);
 
 // Custom styles
 
@@ -101,6 +102,10 @@ $border-gray: #dcdcdc;
     padding: 20px;
     background: $gray;
     border: 1px solid $border-gray;
+  }
+
+  .green {
+    color: $green;
   }
 
 }

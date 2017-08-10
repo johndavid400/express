@@ -1,5 +1,5 @@
 %h1.left Listing Channels
-= link_to 'New Channel', express.new_channel_path, :class => "right btn btn-default"
+= link_to "#{fa_icon('plus', class: 'green')} New Channel".html_safe, express.new_channel_path, :class => "right btn btn-default"
 
 %table.table.table-striped.table-bordered
   %thead

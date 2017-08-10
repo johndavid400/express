@@ -28,5 +28,9 @@ module Express
       key.include?(value) rescue false
     end
 
+    def channel_name(id)
+      Channel.find(id) rescue "Entry"
+    end
+
   end
 end

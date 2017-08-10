@@ -3,9 +3,7 @@
   Entries
 
 .right
-  - Channel.order(:title).each do |s|
-    = link_to s.title.pluralize, express.entries_path(channel: s.id), :class => "btn btn-warning"
-  = link_to 'New Entry', express.new_entry_path(channel_id: params[:channel]), :class => "btn btn-default pad-left"
+  = link_to "#{fa_icon('plus', :class => 'green')} New #{channel_name(params[:channel])}".html_safe, express.new_entry_path(channel_id: params[:channel]), :class => "btn btn-default pad-left"
 
 %table.table.table-striped.table-bordered
   %thead

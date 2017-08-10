@@ -1,5 +1,5 @@
 %h1.left Listing Settings
-= link_to 'New Entry', express.new_setting_path, :class => "right btn btn-default"
+= link_to "#{fa_icon('plus', class: 'green')} New Entry".html_safe, express.new_setting_path, :class => "right btn btn-default"
 
 %table.table.table-striped.table-bordered
   %thead
