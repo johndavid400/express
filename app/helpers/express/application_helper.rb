@@ -24,5 +24,9 @@ module Express
       }
     end
 
+    def key_includes?(key, value)
+      key.include?(value) rescue false
+    end
+
   end
 end

@@ -9,36 +9,38 @@
   .row
     .col-md-12
       .form-group
-        .label-tag Channel
+        %u.label-tag Channel
         = f.select :channel_id, options_from_collection_for_select(Channel.all, :id, :title, selected: @entry.channel_id), :class => "form-control"
     .col-md-6
       .form-group
-        .label-tag Title
+        %u.label-tag Title
         = f.text_field :title, :class => "form-control"
     .col-md-6
       .form-group
-        .label-tag Slug
+        %u.label-tag Slug
         = f.text_field :slug, :class => "form-control"
   .row
     .col-md-12
       .form-group
-        .label-tag Description
+        %u.label-tag Description
         = f.text_area :description, :class => "form-control"
-    .col-md-12
-      .form-group
-        .label-tag Status
-        = f.select :status, options_for_select(statuses, selected: @entry.status), :class => "form-control"
-    .col-md-12
-      .form-group
-        .label-tag Open
-        = f.datetime_select :open, :class => "form-control"
-    .col-md-12
-      .form-group
-        .label-tag Close
-        = f.datetime_select :close, :class => "form-control"
     .col-md-4
       .form-group
-        .label-tag Attachment
+        %u.label-tag Status
+        = f.select :status, options_for_select(statuses, selected: @entry.status), {}, :class => "form-control"
+  .row
+    .col-md-6
+      .form-group
+        %u.label-tag Open
+        = f.datetime_select :open, :class => "form-control"
+    .col-md-6
+      .form-group
+        %u.label-tag Close
+        = f.datetime_select :close, :class => "form-control"
+  .row
+    .col-md-4
+      .form-group
+        %u.label-tag Attachment
         = f.file_field :attachment, :class => "form-control"
     .col-md-12
       .entry-img
@@ -50,3 +52,4 @@
   .actions
     %hr
     = f.submit 'Save', :class => "btn btn-primary"
+

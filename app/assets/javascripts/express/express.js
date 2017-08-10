@@ -6,3 +6,6 @@ $(document).on("ready", function(){
   });
 });
 
+// add ckeditor to all text areas
+$("textarea").addClass("ckeditor");
+

@@ -8,9 +8,7 @@
     <meta name="author" content="">
     <title>Express</title>
     <%= stylesheet_link_tag    "express/application", media: "all" %>
-    <%= javascript_include_tag "express/application" %>
     <%= csrf_meta_tags %>
-    <%= render 'layouts/express/bootstrap' %>
   </head>
   <body>
     <div id="wrapper" class="admin">
@@ -23,7 +21,10 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.ckeditor.com/4.7.1/standard/ckeditor.js"></script>
+    <%= javascript_include_tag "express/application" %>
+    <%= render 'layouts/express/bootstrap' %>
+    <%= yield :javascripts %>
   </body>
 </html>
-
 
