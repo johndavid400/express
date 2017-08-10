@@ -1,8 +1,7 @@
 .row
-  .col-md-6
+  .col-md-12
     .field
-      %u.label-tag= cf["name"]
-
+      .label-tag= cf["name"]
       - if cf["type"] == "select"
         = send("#{cf['type']}_tag", "entry[data][#{cf['key']}]", options_for_select(Setting.find(cf['collection']).option_values, selected: @entry.get_data(cf['key'])), required: ActiveModel::Type::Boolean.new.cast(cf['required']), :class => "form-control")
 

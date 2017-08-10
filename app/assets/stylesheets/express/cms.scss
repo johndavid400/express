@@ -1,3 +1,7 @@
+// Custom Colors
+
+$gray: #f3f3f3;
+$border-gray: #dcdcdc;
 
 // Custom styles
 
@@ -22,12 +26,6 @@
 
   .entry-img {
     width: 300px;
-  }
-
-  .well {
-    hr {
-      color: gray;
-    }
   }
 
   .field {
@@ -97,6 +95,12 @@
 
   .inline {
     display: inline-block;
+  }
+
+  .panel {
+    padding: 20px;
+    background: $gray;
+    border: 1px solid $border-gray;
   }
 
 }
