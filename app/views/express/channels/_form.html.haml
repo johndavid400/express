@@ -31,7 +31,7 @@
         = image_tag @channel.attachment.thumb('200x200!').url if @channel.attachment_stored?
     .col-md-12
       .label-tag Custom Fields
-      .well
+      .panel
         .custom-fields
           - @channel.custom_fields.each do |cf|
             .custom-field
