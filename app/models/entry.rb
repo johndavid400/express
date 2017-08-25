@@ -6,6 +6,10 @@ class Entry < ApplicationRecord
   belongs_to :channel
 	has_many :uploads
 
+  def to_s
+    title
+  end
+
 	def self.open
 		where(status: 'open')
 	end

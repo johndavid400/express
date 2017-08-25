@@ -186,3 +186,1000 @@ Migrating to CreateUploads (20170728190013)
   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "data", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["data", "{\"custom_fields\":[{\"foo\":\"bar\"}]}"], ["status", "open"], ["created_at", "2017-08-25 14:26:15.985013"], ["updated_at", "2017-08-25 14:26:15.985013"]]
   [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:29:41.577989"], ["updated_at", "2017-08-25 14:29:41.577989"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "data", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["data", "{\"custom_fields\":[{\"foo\":\"bar\"}]}"], ["status", "open"], ["created_at", "2017-08-25 14:29:41.581560"], ["updated_at", "2017-08-25 14:29:41.581560"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:30:06.971030"], ["updated_at", "2017-08-25 14:30:06.971030"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "data", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["data", "{\"custom_fields\":[{\"foo\":\"bar\"}]}"], ["status", "open"], ["created_at", "2017-08-25 14:30:06.974540"], ["updated_at", "2017-08-25 14:30:06.974540"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:31:05.923364"], ["updated_at", "2017-08-25 14:31:05.923364"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "data", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["data", "{\"custom_fields\":[{\"foo\":\"bar\"}]}"], ["status", "open"], ["created_at", "2017-08-25 14:31:05.926329"], ["updated_at", "2017-08-25 14:31:05.926329"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:31:05.947980"], ["updated_at", "2017-08-25 14:31:05.947980"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:31:05.889632"], ["close", "2017-08-28 14:31:05.889757"], ["channel_id", 27], ["created_at", "2017-08-25 14:31:05.957158"], ["updated_at", "2017-08-25 14:31:05.957158"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:08.608969"], ["updated_at", "2017-08-25 14:35:08.608969"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "data", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["data", "{\"custom_fields\":[{\"foo\":\"bar\"}]}"], ["status", "open"], ["created_at", "2017-08-25 14:35:08.612245"], ["updated_at", "2017-08-25 14:35:08.612245"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:08.636096"], ["updated_at", "2017-08-25 14:35:08.636096"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:35:08.575264"], ["close", "2017-08-28 14:35:08.575408"], ["channel_id", 30], ["created_at", "2017-08-25 14:35:08.645369"], ["updated_at", "2017-08-25 14:35:08.645369"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:08.649340"], ["updated_at", "2017-08-25 14:35:08.649340"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:35:08.575264"], ["close", "2017-08-28 14:35:08.575408"], ["channel_id", 31], ["created_at", "2017-08-25 14:35:08.651850"], ["updated_at", "2017-08-25 14:35:08.651850"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:08.653695"], ["updated_at", "2017-08-25 14:35:08.653695"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:35:08.575264"], ["close", "2017-08-28 14:35:08.575408"], ["channel_id", 32], ["created_at", "2017-08-25 14:35:08.656643"], ["updated_at", "2017-08-25 14:35:08.656643"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:08.659506"], ["updated_at", "2017-08-25 14:35:08.659506"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:35:08.575264"], ["close", "2017-08-28 14:35:08.575408"], ["channel_id", 33], ["created_at", "2017-08-25 14:35:08.661977"], ["updated_at", "2017-08-25 14:35:08.661977"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:08.664409"], ["updated_at", "2017-08-25 14:35:08.664409"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:35:08.575264"], ["close", "2017-08-28 14:35:08.575408"], ["channel_id", 34], ["created_at", "2017-08-25 14:35:08.671524"], ["updated_at", "2017-08-25 14:35:08.671524"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:34.931460"], ["updated_at", "2017-08-25 14:35:34.931460"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "data", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["data", "{\"custom_fields\":[{\"foo\":\"bar\"}]}"], ["status", "open"], ["created_at", "2017-08-25 14:35:34.934399"], ["updated_at", "2017-08-25 14:35:34.934399"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:34.957884"], ["updated_at", "2017-08-25 14:35:34.957884"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:35:34.897434"], ["close", "2017-08-28 14:35:34.897564"], ["channel_id", 37], ["created_at", "2017-08-25 14:35:34.965873"], ["updated_at", "2017-08-25 14:35:34.965873"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:34.968908"], ["updated_at", "2017-08-25 14:35:34.968908"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:35:34.897434"], ["close", "2017-08-28 14:35:34.897564"], ["channel_id", 38], ["created_at", "2017-08-25 14:35:34.971377"], ["updated_at", "2017-08-25 14:35:34.971377"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:34.973168"], ["updated_at", "2017-08-25 14:35:34.973168"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 39], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:35:34.897434"], ["close", "2017-08-28 14:35:34.897564"], ["channel_id", 39], ["created_at", "2017-08-25 14:35:34.975358"], ["updated_at", "2017-08-25 14:35:34.975358"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.1ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "open"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:34.978667"], ["updated_at", "2017-08-25 14:35:34.978667"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:35:34.897434"], ["close", "2017-08-28 14:35:34.897564"], ["channel_id", 40], ["created_at", "2017-08-25 14:35:34.981018"], ["updated_at", "2017-08-25 14:35:34.981018"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:34.982704"], ["updated_at", "2017-08-25 14:35:34.982704"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 41], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:35:34.897434"], ["close", "2017-08-28 14:35:34.897564"], ["channel_id", 41], ["created_at", "2017-08-25 14:35:34.989617"], ["updated_at", "2017-08-25 14:35:34.989617"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.1ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "closed"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:47.052391"], ["updated_at", "2017-08-25 14:35:47.052391"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "data", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["data", "{\"custom_fields\":[{\"foo\":\"bar\"}]}"], ["status", "open"], ["created_at", "2017-08-25 14:35:47.055426"], ["updated_at", "2017-08-25 14:35:47.055426"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:47.077300"], ["updated_at", "2017-08-25 14:35:47.077300"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 44], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:35:47.019547"], ["close", "2017-08-28 14:35:47.019678"], ["channel_id", 44], ["created_at", "2017-08-25 14:35:47.085188"], ["updated_at", "2017-08-25 14:35:47.085188"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:47.088243"], ["updated_at", "2017-08-25 14:35:47.088243"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 45], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:35:47.019547"], ["close", "2017-08-28 14:35:47.019678"], ["channel_id", 45], ["created_at", "2017-08-25 14:35:47.090628"], ["updated_at", "2017-08-25 14:35:47.090628"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:47.092392"], ["updated_at", "2017-08-25 14:35:47.092392"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 46], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:35:47.019547"], ["close", "2017-08-28 14:35:47.019678"], ["channel_id", 46], ["created_at", "2017-08-25 14:35:47.094565"], ["updated_at", "2017-08-25 14:35:47.094565"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "open"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:47.098016"], ["updated_at", "2017-08-25 14:35:47.098016"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 47], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:35:47.019547"], ["close", "2017-08-28 14:35:47.019678"], ["channel_id", 47], ["created_at", "2017-08-25 14:35:47.100370"], ["updated_at", "2017-08-25 14:35:47.100370"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:35:47.102103"], ["updated_at", "2017-08-25 14:35:47.102103"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 48], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:35:47.019547"], ["close", "2017-08-28 14:35:47.019678"], ["channel_id", 48], ["created_at", "2017-08-25 14:35:47.108943"], ["updated_at", "2017-08-25 14:35:47.108943"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.1ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "closed"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:24.475350"], ["updated_at", "2017-08-25 14:41:24.475350"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "data", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["data", "{\"custom_fields\":[{\"foo\":\"bar\"}]}"], ["status", "open"], ["created_at", "2017-08-25 14:41:24.478748"], ["updated_at", "2017-08-25 14:41:24.478748"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:24.502058"], ["updated_at", "2017-08-25 14:41:24.502058"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 51], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:41:24.441159"], ["close", "2017-08-28 14:41:24.441301"], ["channel_id", 51], ["created_at", "2017-08-25 14:41:24.510594"], ["updated_at", "2017-08-25 14:41:24.510594"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:24.513960"], ["updated_at", "2017-08-25 14:41:24.513960"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:41:24.441159"], ["close", "2017-08-28 14:41:24.441301"], ["channel_id", 52], ["created_at", "2017-08-25 14:41:24.516550"], ["updated_at", "2017-08-25 14:41:24.516550"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:24.518413"], ["updated_at", "2017-08-25 14:41:24.518413"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:41:24.441159"], ["close", "2017-08-28 14:41:24.441301"], ["channel_id", 53], ["created_at", "2017-08-25 14:41:24.520846"], ["updated_at", "2017-08-25 14:41:24.520846"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "open"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:24.524758"], ["updated_at", "2017-08-25 14:41:24.524758"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:41:24.441159"], ["close", "2017-08-28 14:41:24.441301"], ["channel_id", 54], ["created_at", "2017-08-25 14:41:24.527213"], ["updated_at", "2017-08-25 14:41:24.527213"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:24.528997"], ["updated_at", "2017-08-25 14:41:24.528997"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:41:24.441159"], ["close", "2017-08-28 14:41:24.441301"], ["channel_id", 55], ["created_at", "2017-08-25 14:41:24.536016"], ["updated_at", "2017-08-25 14:41:24.536016"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "closed"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "feature"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:24.540201"], ["updated_at", "2017-08-25 14:41:24.540201"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 56], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:41:24.441159"], ["close", "2017-08-28 14:41:24.441301"], ["channel_id", 56], ["created_at", "2017-08-25 14:41:24.543443"], ["updated_at", "2017-08-25 14:41:24.543443"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "event"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:24.545139"], ["updated_at", "2017-08-25 14:41:24.545139"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 57], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:41:24.441159"], ["close", "2017-08-28 14:41:24.441301"], ["channel_id", 57], ["created_at", "2017-08-25 14:41:24.547579"], ["updated_at", "2017-08-25 14:41:24.547579"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "channels"."slug" FROM "channels"[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."slug" = $1 ORDER BY "channels"."id" ASC LIMIT $2[0m  [["slug", "event"], ["LIMIT", 1]]
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."channel_id" = 57[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:30.838818"], ["updated_at", "2017-08-25 14:41:30.838818"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "data", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["data", "{\"custom_fields\":[{\"foo\":\"bar\"}]}"], ["status", "open"], ["created_at", "2017-08-25 14:41:30.842303"], ["updated_at", "2017-08-25 14:41:30.842303"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:30.864349"], ["updated_at", "2017-08-25 14:41:30.864349"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 60], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:41:30.804073"], ["close", "2017-08-28 14:41:30.804203"], ["channel_id", 60], ["created_at", "2017-08-25 14:41:30.872243"], ["updated_at", "2017-08-25 14:41:30.872243"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:30.875680"], ["updated_at", "2017-08-25 14:41:30.875680"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 61], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:41:30.804073"], ["close", "2017-08-28 14:41:30.804203"], ["channel_id", 61], ["created_at", "2017-08-25 14:41:30.878133"], ["updated_at", "2017-08-25 14:41:30.878133"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:30.879998"], ["updated_at", "2017-08-25 14:41:30.879998"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 62], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:41:30.804073"], ["close", "2017-08-28 14:41:30.804203"], ["channel_id", 62], ["created_at", "2017-08-25 14:41:30.882174"], ["updated_at", "2017-08-25 14:41:30.882174"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "open"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:30.885806"], ["updated_at", "2017-08-25 14:41:30.885806"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:41:30.804073"], ["close", "2017-08-28 14:41:30.804203"], ["channel_id", 63], ["created_at", "2017-08-25 14:41:30.888226"], ["updated_at", "2017-08-25 14:41:30.888226"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:30.890070"], ["updated_at", "2017-08-25 14:41:30.890070"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.3ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:41:30.804073"], ["close", "2017-08-28 14:41:30.804203"], ["channel_id", 64], ["created_at", "2017-08-25 14:41:30.897152"], ["updated_at", "2017-08-25 14:41:30.897152"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "closed"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "feature"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:30.900828"], ["updated_at", "2017-08-25 14:41:30.900828"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:41:30.804073"], ["close", "2017-08-28 14:41:30.804203"], ["channel_id", 65], ["created_at", "2017-08-25 14:41:30.903538"], ["updated_at", "2017-08-25 14:41:30.903538"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "event"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:30.905260"], ["updated_at", "2017-08-25 14:41:30.905260"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:41:30.804073"], ["close", "2017-08-28 14:41:30.804203"], ["channel_id", 66], ["created_at", "2017-08-25 14:41:30.908054"], ["updated_at", "2017-08-25 14:41:30.908054"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "channels"."slug" FROM "channels"[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."slug" = $1 ORDER BY "channels"."id" ASC LIMIT $2[0m  [["slug", "event"], ["LIMIT", 1]]
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."channel_id" = 66[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:41.306859"], ["updated_at", "2017-08-25 14:41:41.306859"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "data", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["data", "{\"custom_fields\":[{\"foo\":\"bar\"}]}"], ["status", "open"], ["created_at", "2017-08-25 14:41:41.310406"], ["updated_at", "2017-08-25 14:41:41.310406"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:41.333451"], ["updated_at", "2017-08-25 14:41:41.333451"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:41:41.272032"], ["close", "2017-08-28 14:41:41.272166"], ["channel_id", 69], ["created_at", "2017-08-25 14:41:41.341963"], ["updated_at", "2017-08-25 14:41:41.341963"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:41.345428"], ["updated_at", "2017-08-25 14:41:41.345428"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:41:41.272032"], ["close", "2017-08-28 14:41:41.272166"], ["channel_id", 70], ["created_at", "2017-08-25 14:41:41.348133"], ["updated_at", "2017-08-25 14:41:41.348133"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:41.349920"], ["updated_at", "2017-08-25 14:41:41.349920"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:41:41.272032"], ["close", "2017-08-28 14:41:41.272166"], ["channel_id", 71], ["created_at", "2017-08-25 14:41:41.352147"], ["updated_at", "2017-08-25 14:41:41.352147"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "open"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:41.355704"], ["updated_at", "2017-08-25 14:41:41.355704"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:41:41.272032"], ["close", "2017-08-28 14:41:41.272166"], ["channel_id", 72], ["created_at", "2017-08-25 14:41:41.358449"], ["updated_at", "2017-08-25 14:41:41.358449"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:41.360587"], ["updated_at", "2017-08-25 14:41:41.360587"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:41:41.272032"], ["close", "2017-08-28 14:41:41.272166"], ["channel_id", 73], ["created_at", "2017-08-25 14:41:41.367780"], ["updated_at", "2017-08-25 14:41:41.367780"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "closed"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "feature"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:41.371327"], ["updated_at", "2017-08-25 14:41:41.371327"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:41:41.272032"], ["close", "2017-08-28 14:41:41.272166"], ["channel_id", 74], ["created_at", "2017-08-25 14:41:41.374380"], ["updated_at", "2017-08-25 14:41:41.374380"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "event"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:41:41.376296"], ["updated_at", "2017-08-25 14:41:41.376296"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:41:41.272032"], ["close", "2017-08-28 14:41:41.272166"], ["channel_id", 75], ["created_at", "2017-08-25 14:41:41.378900"], ["updated_at", "2017-08-25 14:41:41.378900"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "channels"."slug" FROM "channels"[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."slug" = $1 ORDER BY "channels"."id" ASC LIMIT $2[0m  [["slug", "event"], ["LIMIT", 1]]
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."channel_id" = 75[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:17.678296"], ["updated_at", "2017-08-25 14:47:17.678296"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "data", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["data", "{\"custom_fields\":[{\"foo\":\"bar\"}]}"], ["status", "open"], ["created_at", "2017-08-25 14:47:17.681665"], ["updated_at", "2017-08-25 14:47:17.681665"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:17.703988"], ["updated_at", "2017-08-25 14:47:17.703988"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:47:17.642920"], ["close", "2017-08-28 14:47:17.643073"], ["channel_id", 78], ["created_at", "2017-08-25 14:47:17.712139"], ["updated_at", "2017-08-25 14:47:17.712139"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:17.715337"], ["updated_at", "2017-08-25 14:47:17.715337"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "data", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["data", "{\"foo\":\"bar\"}"], ["open", "2017-08-23 14:47:17.642920"], ["close", "2017-08-28 14:47:17.643073"], ["channel_id", 79], ["created_at", "2017-08-25 14:47:17.717870"], ["updated_at", "2017-08-25 14:47:17.717870"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:17.783296"], ["updated_at", "2017-08-25 14:47:17.783296"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:47:17.642920"], ["close", "2017-08-28 14:47:17.643073"], ["channel_id", 80], ["created_at", "2017-08-25 14:47:17.785807"], ["updated_at", "2017-08-25 14:47:17.785807"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:17.787463"], ["updated_at", "2017-08-25 14:47:17.787463"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:47:17.642920"], ["close", "2017-08-28 14:47:17.643073"], ["channel_id", 81], ["created_at", "2017-08-25 14:47:17.789482"], ["updated_at", "2017-08-25 14:47:17.789482"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "open"]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:17.792975"], ["updated_at", "2017-08-25 14:47:17.792975"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:47:17.642920"], ["close", "2017-08-28 14:47:17.643073"], ["channel_id", 82], ["created_at", "2017-08-25 14:47:17.795668"], ["updated_at", "2017-08-25 14:47:17.795668"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:17.797532"], ["updated_at", "2017-08-25 14:47:17.797532"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:47:17.642920"], ["close", "2017-08-28 14:47:17.643073"], ["channel_id", 83], ["created_at", "2017-08-25 14:47:17.799737"], ["updated_at", "2017-08-25 14:47:17.799737"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "closed"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "feature"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:17.802990"], ["updated_at", "2017-08-25 14:47:17.802990"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:47:17.642920"], ["close", "2017-08-28 14:47:17.643073"], ["channel_id", 84], ["created_at", "2017-08-25 14:47:17.805382"], ["updated_at", "2017-08-25 14:47:17.805382"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "event"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:17.806913"], ["updated_at", "2017-08-25 14:47:17.806913"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 85], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:47:17.642920"], ["close", "2017-08-28 14:47:17.643073"], ["channel_id", 85], ["created_at", "2017-08-25 14:47:17.809070"], ["updated_at", "2017-08-25 14:47:17.809070"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "channels"."slug" FROM "channels"[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."slug" = $1 ORDER BY "channels"."id" ASC LIMIT $2[0m  [["slug", "event"], ["LIMIT", 1]]
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."channel_id" = 85[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:21.319005"], ["updated_at", "2017-08-25 14:47:21.319005"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "data", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["data", "{\"custom_fields\":[{\"foo\":\"bar\"}]}"], ["status", "open"], ["created_at", "2017-08-25 14:47:21.321955"], ["updated_at", "2017-08-25 14:47:21.321955"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:21.343131"], ["updated_at", "2017-08-25 14:47:21.343131"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 88], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:47:21.285546"], ["close", "2017-08-28 14:47:21.285669"], ["channel_id", 88], ["created_at", "2017-08-25 14:47:21.351341"], ["updated_at", "2017-08-25 14:47:21.351341"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:21.354357"], ["updated_at", "2017-08-25 14:47:21.354357"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "data", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["data", "{\"foo\":\"bar\"}"], ["open", "2017-08-23 14:47:21.285546"], ["close", "2017-08-28 14:47:21.285669"], ["channel_id", 89], ["created_at", "2017-08-25 14:47:21.356740"], ["updated_at", "2017-08-25 14:47:21.356740"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:21.425905"], ["updated_at", "2017-08-25 14:47:21.425905"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:47:21.285546"], ["close", "2017-08-28 14:47:21.285669"], ["channel_id", 90], ["created_at", "2017-08-25 14:47:21.428251"], ["updated_at", "2017-08-25 14:47:21.428251"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:21.429834"], ["updated_at", "2017-08-25 14:47:21.429834"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:47:21.285546"], ["close", "2017-08-28 14:47:21.285669"], ["channel_id", 91], ["created_at", "2017-08-25 14:47:21.431750"], ["updated_at", "2017-08-25 14:47:21.431750"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.1ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "open"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:21.434786"], ["updated_at", "2017-08-25 14:47:21.434786"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:47:21.285546"], ["close", "2017-08-28 14:47:21.285669"], ["channel_id", 92], ["created_at", "2017-08-25 14:47:21.436928"], ["updated_at", "2017-08-25 14:47:21.436928"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:21.438497"], ["updated_at", "2017-08-25 14:47:21.438497"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 93], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:47:21.285546"], ["close", "2017-08-28 14:47:21.285669"], ["channel_id", 93], ["created_at", "2017-08-25 14:47:21.440397"], ["updated_at", "2017-08-25 14:47:21.440397"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.1ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "closed"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "feature"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:21.443079"], ["updated_at", "2017-08-25 14:47:21.443079"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 94], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:47:21.285546"], ["close", "2017-08-28 14:47:21.285669"], ["channel_id", 94], ["created_at", "2017-08-25 14:47:21.445445"], ["updated_at", "2017-08-25 14:47:21.445445"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "event"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:21.446862"], ["updated_at", "2017-08-25 14:47:21.446862"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 95], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:47:21.285546"], ["close", "2017-08-28 14:47:21.285669"], ["channel_id", 95], ["created_at", "2017-08-25 14:47:21.448924"], ["updated_at", "2017-08-25 14:47:21.448924"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "channels"."slug" FROM "channels"[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."slug" = $1 ORDER BY "channels"."id" ASC LIMIT $2[0m  [["slug", "event"], ["LIMIT", 1]]
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."channel_id" = 95[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:24.992880"], ["updated_at", "2017-08-25 14:47:24.992880"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "data", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["data", "{\"custom_fields\":[{\"foo\":\"bar\"}]}"], ["status", "open"], ["created_at", "2017-08-25 14:47:24.995893"], ["updated_at", "2017-08-25 14:47:24.995893"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:25.018454"], ["updated_at", "2017-08-25 14:47:25.018454"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 98], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:47:24.958365"], ["close", "2017-08-28 14:47:24.958513"], ["channel_id", 98], ["created_at", "2017-08-25 14:47:25.026563"], ["updated_at", "2017-08-25 14:47:25.026563"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:25.029761"], ["updated_at", "2017-08-25 14:47:25.029761"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "data", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["data", "{\"foo\":\"bar\"}"], ["open", "2017-08-23 14:47:24.958365"], ["close", "2017-08-28 14:47:24.958513"], ["channel_id", 99], ["created_at", "2017-08-25 14:47:25.032176"], ["updated_at", "2017-08-25 14:47:25.032176"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:25.097771"], ["updated_at", "2017-08-25 14:47:25.097771"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 100], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:47:24.958365"], ["close", "2017-08-28 14:47:24.958513"], ["channel_id", 100], ["created_at", "2017-08-25 14:47:25.100208"], ["updated_at", "2017-08-25 14:47:25.100208"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:25.101861"], ["updated_at", "2017-08-25 14:47:25.101861"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 101], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:47:24.958365"], ["close", "2017-08-28 14:47:24.958513"], ["channel_id", 101], ["created_at", "2017-08-25 14:47:25.103808"], ["updated_at", "2017-08-25 14:47:25.103808"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.1ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "open"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:25.106791"], ["updated_at", "2017-08-25 14:47:25.106791"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 102], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:47:24.958365"], ["close", "2017-08-28 14:47:24.958513"], ["channel_id", 102], ["created_at", "2017-08-25 14:47:25.109262"], ["updated_at", "2017-08-25 14:47:25.109262"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:25.111158"], ["updated_at", "2017-08-25 14:47:25.111158"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 103], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:47:24.958365"], ["close", "2017-08-28 14:47:24.958513"], ["channel_id", 103], ["created_at", "2017-08-25 14:47:25.113313"], ["updated_at", "2017-08-25 14:47:25.113313"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.1ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "closed"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "feature"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:25.116035"], ["updated_at", "2017-08-25 14:47:25.116035"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 104], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:47:24.958365"], ["close", "2017-08-28 14:47:24.958513"], ["channel_id", 104], ["created_at", "2017-08-25 14:47:25.118241"], ["updated_at", "2017-08-25 14:47:25.118241"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "event"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:47:25.119577"], ["updated_at", "2017-08-25 14:47:25.119577"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 105], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:47:24.958365"], ["close", "2017-08-28 14:47:24.958513"], ["channel_id", 105], ["created_at", "2017-08-25 14:47:25.121515"], ["updated_at", "2017-08-25 14:47:25.121515"]]
+  [1m[35m (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "channels"."slug" FROM "channels"[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."slug" = $1 ORDER BY "channels"."id" ASC LIMIT $2[0m  [["slug", "event"], ["LIMIT", 1]]
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."channel_id" = 105[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:48:55.300306"], ["updated_at", "2017-08-25 14:48:55.300306"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "data", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["data", "{\"custom_fields\":[{\"foo\":\"bar\"}]}"], ["status", "open"], ["created_at", "2017-08-25 14:48:55.303641"], ["updated_at", "2017-08-25 14:48:55.303641"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:48:55.326040"], ["updated_at", "2017-08-25 14:48:55.326040"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 108], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:48:55.263342"], ["close", "2017-08-28 14:48:55.263474"], ["channel_id", 108], ["created_at", "2017-08-25 14:48:55.334126"], ["updated_at", "2017-08-25 14:48:55.334126"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:48:55.337564"], ["updated_at", "2017-08-25 14:48:55.337564"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 109], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "data", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["data", "{\"foo\":\"bar\"}"], ["open", "2017-08-23 14:48:55.263342"], ["close", "2017-08-28 14:48:55.263474"], ["channel_id", 109], ["created_at", "2017-08-25 14:48:55.340326"], ["updated_at", "2017-08-25 14:48:55.340326"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:48:55.404712"], ["updated_at", "2017-08-25 14:48:55.404712"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 110], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "data", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["data", "{\"foo\":\"bar\"}"], ["open", "2017-08-23 14:48:55.263342"], ["close", "2017-08-28 14:48:55.263474"], ["channel_id", 110], ["created_at", "2017-08-25 14:48:55.407380"], ["updated_at", "2017-08-25 14:48:55.407380"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:48:55.410339"], ["updated_at", "2017-08-25 14:48:55.410339"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 111], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:48:55.263342"], ["close", "2017-08-28 14:48:55.263474"], ["channel_id", 111], ["created_at", "2017-08-25 14:48:55.412618"], ["updated_at", "2017-08-25 14:48:55.412618"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:48:55.414207"], ["updated_at", "2017-08-25 14:48:55.414207"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 112], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:48:55.263342"], ["close", "2017-08-28 14:48:55.263474"], ["channel_id", 112], ["created_at", "2017-08-25 14:48:55.416260"], ["updated_at", "2017-08-25 14:48:55.416260"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "open"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:48:55.420017"], ["updated_at", "2017-08-25 14:48:55.420017"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 113], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 14:48:55.263342"], ["close", "2017-08-28 14:48:55.263474"], ["channel_id", 113], ["created_at", "2017-08-25 14:48:55.422524"], ["updated_at", "2017-08-25 14:48:55.422524"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:48:55.424268"], ["updated_at", "2017-08-25 14:48:55.424268"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 114], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 14:48:55.263342"], ["close", "2017-08-28 14:48:55.263474"], ["channel_id", 114], ["created_at", "2017-08-25 14:48:55.426486"], ["updated_at", "2017-08-25 14:48:55.426486"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "closed"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "feature"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:48:55.429773"], ["updated_at", "2017-08-25 14:48:55.429773"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 115], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:48:55.263342"], ["close", "2017-08-28 14:48:55.263474"], ["channel_id", 115], ["created_at", "2017-08-25 14:48:55.432552"], ["updated_at", "2017-08-25 14:48:55.432552"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "event"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 14:48:55.434273"], ["updated_at", "2017-08-25 14:48:55.434273"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 116], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 14:48:55.263342"], ["close", "2017-08-28 14:48:55.263474"], ["channel_id", 116], ["created_at", "2017-08-25 14:48:55.436731"], ["updated_at", "2017-08-25 14:48:55.436731"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "channels"."slug" FROM "channels"[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."slug" = $1 ORDER BY "channels"."id" ASC LIMIT $2[0m  [["slug", "event"], ["LIMIT", 1]]
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."channel_id" = 116[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 15:10:28.762725"], ["updated_at", "2017-08-25 15:10:28.762725"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "data", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["data", "{\"custom_fields\":[{\"foo\":\"bar\"}]}"], ["status", "open"], ["created_at", "2017-08-25 15:10:28.766000"], ["updated_at", "2017-08-25 15:10:28.766000"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 15:10:28.787803"], ["updated_at", "2017-08-25 15:10:28.787803"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 119], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 15:10:28.729594"], ["close", "2017-08-28 15:10:28.729722"], ["channel_id", 119], ["created_at", "2017-08-25 15:10:28.795646"], ["updated_at", "2017-08-25 15:10:28.795646"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 15:10:28.798765"], ["updated_at", "2017-08-25 15:10:28.798765"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 120], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "data", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["data", "{\"foo\":\"bar\"}"], ["open", "2017-08-23 15:10:28.729594"], ["close", "2017-08-28 15:10:28.729722"], ["channel_id", 120], ["created_at", "2017-08-25 15:10:28.801186"], ["updated_at", "2017-08-25 15:10:28.801186"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 15:10:28.865672"], ["updated_at", "2017-08-25 15:10:28.865672"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 121], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "data", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["data", "{\"foo\":\"bar\"}"], ["open", "2017-08-23 15:10:28.729594"], ["close", "2017-08-28 15:10:28.729722"], ["channel_id", 121], ["created_at", "2017-08-25 15:10:28.868149"], ["updated_at", "2017-08-25 15:10:28.868149"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 15:10:28.870816"], ["updated_at", "2017-08-25 15:10:28.870816"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 122], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 15:10:28.729594"], ["close", "2017-08-28 15:10:28.729722"], ["channel_id", 122], ["created_at", "2017-08-25 15:10:28.873020"], ["updated_at", "2017-08-25 15:10:28.873020"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 15:10:28.874634"], ["updated_at", "2017-08-25 15:10:28.874634"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 123], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 15:10:28.729594"], ["close", "2017-08-28 15:10:28.729722"], ["channel_id", 123], ["created_at", "2017-08-25 15:10:28.876937"], ["updated_at", "2017-08-25 15:10:28.876937"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "open"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 15:10:28.880650"], ["updated_at", "2017-08-25 15:10:28.880650"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 124], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "open"], ["open", "2017-08-23 15:10:28.729594"], ["close", "2017-08-28 15:10:28.729722"], ["channel_id", 124], ["created_at", "2017-08-25 15:10:28.883010"], ["updated_at", "2017-08-25 15:10:28.883010"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "test-channel"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 15:10:28.884625"], ["updated_at", "2017-08-25 15:10:28.884625"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 125], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "status", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["status", "closed"], ["open", "2017-08-23 15:10:28.729594"], ["close", "2017-08-28 15:10:28.729722"], ["channel_id", 125], ["created_at", "2017-08-25 15:10:28.886791"], ["updated_at", "2017-08-25 15:10:28.886791"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."status" = $1[0m  [["status", "closed"]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "feature"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 15:10:28.889876"], ["updated_at", "2017-08-25 15:10:28.889876"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 126], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 15:10:28.729594"], ["close", "2017-08-28 15:10:28.729722"], ["channel_id", 126], ["created_at", "2017-08-25 15:10:28.892534"], ["updated_at", "2017-08-25 15:10:28.892534"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "channels" ("title", "slug", "description", "status", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "Test Channel"], ["slug", "event"], ["description", "Descriptive stuff right here"], ["status", "open"], ["created_at", "2017-08-25 15:10:28.894059"], ["updated_at", "2017-08-25 15:10:28.894059"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mChannel Load (0.1ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."id" = $1 LIMIT $2[0m  [["id", 127], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "entries" ("title", "slug", "description", "open", "close", "channel_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["title", "Test Entry"], ["slug", "test-entry"], ["description", "Descriptive stuff right here"], ["open", "2017-08-23 15:10:28.729594"], ["close", "2017-08-28 15:10:28.729722"], ["channel_id", 127], ["created_at", "2017-08-25 15:10:28.896397"], ["updated_at", "2017-08-25 15:10:28.896397"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "channels"."slug" FROM "channels"[0m
+  [1m[36mChannel Load (0.2ms)[0m  [1m[34mSELECT  "channels".* FROM "channels" WHERE "channels"."slug" = $1 ORDER BY "channels"."id" ASC LIMIT $2[0m  [["slug", "event"], ["LIMIT", 1]]
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."channel_id" = 127[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
