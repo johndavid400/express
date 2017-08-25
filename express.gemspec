@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.test_files = Dir["spec/**/*"]
 
   s.add_dependency "rails", "~> 5.1.3"
 
@@ -25,8 +26,11 @@ Gem::Specification.new do |s|
   s.add_dependency 'friendly_id', '~> 5.1.0'
   s.add_dependency 'dragonfly', '~> 1.1.3'
   s.add_dependency "font-awesome-rails"
+  s.add_dependency 'capybara'
+  s.add_dependency 'factory_girl_rails'
+  s.add_dependency 'simplecov'
+  s.add_dependency 'shoulda-matchers'
 
   s.add_development_dependency "pg"
-  s.add_development_dependency "sqlite3"
 
 end
