@@ -23,6 +23,11 @@ RSpec.describe Entry, type: :model do
       expect(entry.foo).to eq("bar")
     end
 
+    it "dynamic instance method returns NoMethodError (super) if data attribute is not present" do
+      entry = create(:entry)
+      expect{entry.oops}.to raise_error(NoMethodError)
+    end
+
   end
 
   context "class methods scope Entries" do
@@ -45,6 +50,10 @@ RSpec.describe Entry, type: :model do
       channel2 = create(:channel, slug: "event")
       entry2 = create(:entry, channel_id: channel2.id)
       expect(Entry.event).to eq([entry2])
+    end
+
+    it "dynamic class method returns NoMethodError (super) if Channel scope is not present" do
+      expect{Entry.oops}.to raise_error(NoMethodError)
     end
 
   end
