@@ -10,3 +10,7 @@ test:
   <<: *default
   database: express_test
 
+development:
+  <<: *default
+  database: express_development
+
