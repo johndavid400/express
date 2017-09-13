@@ -29,7 +29,11 @@ class Entry < ApplicationRecord
 
   def method_missing(*args)
 		# allows calling undefined json data keys as methods on entries - if none exists, resort to original method_missing error
-		get_data(args) rescue super
+		if get_data(args).present?
+		  get_data(args)
+    else
+      super
+    end
   end
 
   def get_data(key)
