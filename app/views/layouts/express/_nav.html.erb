@@ -34,7 +34,8 @@
           <li class="sidebar-search">
             <div class="input-group custom-search-form">
               <%= text_field_tag 'search', nil, class: "form-control", placeholder: 'Search...' %>
-              <%= hidden_field_tag 'channel_id', params[:channel], class: "form-control", placeholder: 'Search...' if params[:channel].present? %>
+              <%= hidden_field_tag 'channel_id', params[:channel] if params[:channel].present? %>
+              <%= hidden_field_tag 'resource', params[:controller].gsub("express/", "") %>
               <span class="input-group-btn">
                 <button class="btn btn-default" type="submit" name="commit">
                   <i class="fa fa-search"></i>

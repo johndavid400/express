@@ -5,6 +5,16 @@ class Channel < ApplicationRecord
   dragonfly_accessor :attachment
   has_many :entries
 
+  include PgSearch
+  pg_search_scope :search,
+    :against => {
+      :title => 'A',
+      :description => 'B'
+    },
+    :using => {
+      :tsearch => {:prefix => true}
+    }
+
   def to_s
     title
   end

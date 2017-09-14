@@ -3,6 +3,16 @@ class Setting < ApplicationRecord
   extend FriendlyId
   friendly_id :name, use: [:slugged, :finders]
 
+  include PgSearch
+  pg_search_scope :search,
+    :against => {
+      :name => 'A',
+      :description => 'B'
+    },
+    :using => {
+      :tsearch => {:prefix => true}
+    }
+
   def options
     data["options"].present? ? data["options"] : {}
   rescue

@@ -12,5 +12,15 @@ module Express
       @title = params[:controller].split("/").last.titleize
     end
 
+    def search
+      if params[:search].present? || params[:channel_id].present?
+        klass = params[:resource].classify.constantize
+        @list = klass.order(created_at: :desc)
+        @list = @list.where(channel_id: params[:channel_id]) if params[:channel_id].present?
+        @list = @list.search(params[:search]) if params[:search].present?
+        render 'express/shared/search'
+      end
+    end
+
   end
 end
