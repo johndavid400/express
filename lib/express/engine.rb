@@ -8,6 +8,7 @@ module Express
     require 'friendly_id'
     require 'dragonfly'
     require "font-awesome-rails"
+    require 'pg_search'
 
     config.to_prepare do
       Dir.glob(Rails.root + "app/decorators/**/*_decorator*.rb").each do |c|

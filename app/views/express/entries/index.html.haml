@@ -15,13 +15,6 @@
       %th Channel
       %th
 
-  %tbody
-    - @entries.each do |entry|
-      %tr
-        %td= link_to entry.title, express.edit_entry_path(entry)
-        %td= entry.slug
-        %td= entry.status
-        %td= entry.user_id
-        %td= entry.channel
-        %td= link_to fa_icon("times"), express.entry_path(entry), method: :delete, class: "red", data: { confirm: 'Are you sure?' }
+  %tbody.list
+    = render 'index'
 

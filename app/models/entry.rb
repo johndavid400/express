@@ -6,6 +6,16 @@ class Entry < ApplicationRecord
   belongs_to :channel
 	has_many :uploads
 
+  include PgSearch
+  pg_search_scope :search,
+    :against => {
+      :title => 'A',
+      :description => 'B'
+    },
+    :using => {
+      :tsearch => {:prefix => true}
+    }
+
   def to_s
     title
   end

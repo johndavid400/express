@@ -30,16 +30,19 @@
   <div class="navbar-default sidebar" role="navigation">
     <div class="sidebar-nav navbar-collapse">
       <ul class="nav" id="side-menu">
-        <li class="sidebar-search">
-          <div class="input-group custom-search-form">
-            <input type="text" class="form-control" placeholder="Search...">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="button">
-                <i class="fa fa-search"></i>
-              </button>
-            </span>
-          </div>
-        </li>
+        <%= form_tag express.search_path, method: "get", remote: true do %>
+          <li class="sidebar-search">
+            <div class="input-group custom-search-form">
+              <%= text_field_tag 'search', nil, class: "form-control", placeholder: 'Search...' %>
+              <%= hidden_field_tag 'channel_id', params[:channel], class: "form-control", placeholder: 'Search...' if params[:channel].present? %>
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="submit" name="commit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+            </div>
+          </li>
+        <% end %>
         <li>
           <%= link_to "#{fa_icon('dashboard', :class => "fa-fw")} Dashboard".html_safe, express.entries_path  %>
         </li>

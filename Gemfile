@@ -24,3 +24,4 @@ gemspec
 #gem 'dragonfly', '~> 1.1.3'
 #gem "font-awesome-rails"
 #
+gem 'pg_search'
