@@ -3,5 +3,7 @@ Express::Engine.routes.draw do
   resources :channels
   resources :entries
   resources :settings
-  get 'search' => 'application#search'
+  resources :sites
+  post 'change_site'       => 'sites#change_site'
+  get 'search'             => 'application#search'
 end

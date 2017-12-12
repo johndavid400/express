@@ -16,6 +16,12 @@ class Entry < ApplicationRecord
       :tsearch => {:prefix => true}
     }
 
+  def self.from_site(site_id)
+    #channel_ids = Channel.pluck(:id).uniq
+    #where(channel_id: channel_ids)
+    self.includes(:channel).where(channels: {site_id: site_id})
+  end
+
   def to_s
     title
   end

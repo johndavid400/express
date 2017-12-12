@@ -1,0 +1,28 @@
+= form_for [@site] do |f|
+  - if @site.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@site.errors.count, "error")} prohibited this site from being saved:"
+      %ul
+        - @site.errors.full_messages.each do |message|
+          %li= message
+
+  .row
+    .col-md-6
+      .form-group
+        .label-tag Name
+        = f.text_field :name, :class => "form-control"
+    .col-md-6
+      .form-group
+        .label-tag Slug
+        = f.text_field :slug, :class => "form-control"
+    .col-md-12
+      .form-group
+        .label-tag Description
+        = f.text_area :description, :class => "form-control"
+    .col-md-12
+      .form-group
+        .label-tag Key
+        = f.text_field :key, :class => "form-control"
+
+      .actions
+        = f.submit 'Save', :class => "btn btn-primary"
