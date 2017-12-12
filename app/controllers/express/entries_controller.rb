@@ -1,12 +1,13 @@
 class Express::EntriesController < Express::ApplicationController
   before_action :set_entry, only: [:show, :edit, :update, :destroy]
+  before_action :validate_user, only: [:index, :show]
   after_action :set_data, only: [:create, :update]
   #after_action :handle_uploads, only: [:create, :update]
 
   # GET /entries
   # GET /entries.json
   def index
-    @entries = Entry.order(:created_at)
+    @entries = current_site.entries.order(:created_at)
     @entries = @entries.where(channel_id: params[:channel]) if params[:channel].present?
   end
 
@@ -61,14 +62,6 @@ class Express::EntriesController < Express::ApplicationController
     respond_to do |format|
       format.html { redirect_to express.entries_url, notice: 'Entry was successfully destroyed.' }
       format.json { head :no_content }
-    end
-  end
-
-  def search
-    if params[:search].present? || params[:channel_id].present?
-      @entries = Entry.order(created_at: :desc)
-      @entries = @entries.where(channel_id: params[:channel_id]) if params[:channel_id].present?
-      @entries = @entries.search(params[:search]) if params[:search].present?
     end
   end
 

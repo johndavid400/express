@@ -1,0 +1,6 @@
+- list.each do |site|
+  %tr
+    %td= link_to site.name, express.edit_site_path(site)
+    %td= site.slug
+    %td= link_to fa_icon("times"), express.site_path(site), method: :delete, class: "red", data: { confirm: 'Are you sure?' }
+

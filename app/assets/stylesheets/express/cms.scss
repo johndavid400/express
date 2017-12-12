@@ -6,7 +6,7 @@ $green: rgba(87, 196, 51, 1.0);
 
 // Custom styles
 
-.admin {
+.express {
 
   .admin-nav {
     margin-top: 20px;
@@ -106,6 +106,16 @@ $green: rgba(87, 196, 51, 1.0);
 
   .green {
     color: $green;
+  }
+
+  .index-edit {
+    font-size: 0.7em;
+    margin: 0 10px;
+  }
+
+  .site-select {
+    padding: 15px;
+    list-style-type: none;
   }
 
 }

@@ -2,6 +2,22 @@ module Express
   module ApplicationHelper
     include FontAwesome::Rails::IconHelper
 
+    def current_site
+      cs = cookies.permanent.signed[:site_id]
+      if cs.present?
+        Site.friendly.find(cs)
+      else
+        cookies.permanent.signed[:site_id] = Site.default.id
+        Site.default
+      end
+    rescue
+      cookies.permanent.signed[:site_id] = nil
+    end
+
+    def current_user
+      User.new
+    end
+
     def statuses
       [
         "open",

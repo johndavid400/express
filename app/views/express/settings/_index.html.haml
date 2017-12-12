@@ -1,0 +1,7 @@
+- list.each do |setting|
+  %tr
+    %td= link_to setting.name, express.edit_setting_path(setting)
+    %td= setting.slug
+    %td= setting.options.map{|s| s.values.first }.join(", ")
+    %td= link_to fa_icon("times"), express.setting_path(setting), method: :delete, class: "red", data: { confirm: 'Are you sure?' }
+

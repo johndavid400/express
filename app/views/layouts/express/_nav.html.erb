@@ -7,7 +7,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="index.html">Express CMS</a>
+    <a class="navbar-brand" href="<%= express.root_path %>">Express CMS</a>
   </div>
 
   <ul class="nav navbar-top-links navbar-right">
@@ -28,13 +28,21 @@
   </ul>
 
   <div class="navbar-default sidebar" role="navigation">
+    <%- if Site.selectable? %>
+      <%= form_tag express.change_site_path, id: "change-site" do %>
+        <li class="site-select">
+          <%= select_tag 'site', options_from_collection_for_select(Site.order(name: :asc), :id, :name, selected: current_site.id), :class => "form-control" %>
+        </li>
+      <% end %>
+    <% end %>
     <div class="sidebar-nav navbar-collapse">
       <ul class="nav" id="side-menu">
         <%= form_tag express.search_path, method: "get", remote: true do %>
           <li class="sidebar-search">
             <div class="input-group custom-search-form">
               <%= text_field_tag 'search', nil, class: "form-control", placeholder: 'Search...' %>
-              <%= hidden_field_tag 'channel_id', params[:channel], class: "form-control", placeholder: 'Search...' if params[:channel].present? %>
+              <%= hidden_field_tag 'channel_id', params[:channel] if params[:channel].present? %>
+              <%= hidden_field_tag 'resource', params[:controller].gsub("express/", "") %>
               <span class="input-group-btn">
                 <button class="btn btn-default" type="submit" name="commit">
                   <i class="fa fa-search"></i>
@@ -49,7 +57,7 @@
         <li>
           <%= link_to "#{fa_icon('bar-chart-o', :class => "fa-fw")} Entries<span class='fa arrow'></span>".html_safe, express.entries_path %>
           <ul class="nav nav-second-level">
-            <%- Channel.order(title: :asc).each do |channel| %>
+            <%- current_site.channels.order(title: :asc).each do |channel| %>
               <li>
                 <%= link_to "#{fa_icon('plus', :class => "fa-fw")} #{channel.title.pluralize}".html_safe, express.entries_path(channel: channel.id) %>
               </li>

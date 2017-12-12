@@ -1,11 +1,12 @@
 class Express::ChannelsController < Express::ApplicationController
   before_action :set_channel, only: [:show, :edit, :update, :destroy]
+  before_action :validate_user, only: [:index, :show]
   after_action :set_data, only: [:create, :update]
 
   # GET /channels
   # GET /channels.json
   def index
-    @channels = Channel.all
+    @channels = current_site.channels.order(title: :asc)
   end
 
   # GET /channels/1
@@ -15,7 +16,7 @@ class Express::ChannelsController < Express::ApplicationController
 
   # GET /channels/new
   def new
-    @channel = Channel.new
+    @channel = current_site.channels.new
   end
 
   # GET /channels/1/edit
@@ -25,7 +26,7 @@ class Express::ChannelsController < Express::ApplicationController
   # POST /channels
   # POST /channels.json
   def create
-    @channel = Channel.new(channel_params)
+    @channel = current_site.channels.new(channel_params)
 
     respond_to do |format|
       if @channel.save
@@ -65,7 +66,7 @@ class Express::ChannelsController < Express::ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_channel
-      @channel = Channel.friendly.find(params[:id])
+      @channel = current_site.channels.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

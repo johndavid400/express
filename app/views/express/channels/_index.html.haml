@@ -1,0 +1,6 @@
+- list.each do |channel|
+  %tr
+    %td= link_to "#{fa_icon('pencil', class: 'index-edit')} #{channel.title}".html_safe, express.edit_channel_path(channel)
+    %td= channel.slug
+    %td= channel.status
+    %td= link_to fa_icon("times"), express.channel_path(channel), method: :delete, class: "red", data: { confirm: 'Are you sure?'}

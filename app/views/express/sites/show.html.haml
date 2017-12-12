@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @site.name
+%p
+  %b Slug:
+  = @site.slug
+%p
+  %b Description:
+  = @site.description
+
+= link_to 'Edit', express.edit_site_path(@site)
+\|
+= link_to 'Back', express.sites_path

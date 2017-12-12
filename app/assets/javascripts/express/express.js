@@ -9,3 +9,8 @@ $(document).on("ready", function(){
 // add ckeditor to all text areas
 $("textarea").addClass("ckeditor");
 
+// change site to manage
+$('body').on('change', '.site-select', function(event){
+  $("#change-site").submit();
+});
+
