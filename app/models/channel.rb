@@ -36,4 +36,10 @@ class Channel < ApplicationRecord
     data["custom_fields"].map{|s| s["key"].to_sym }
   end
 
+  private
+
+  def should_generate_new_friendly_id?
+    slug.blank?
+  end
+
 end

@@ -66,4 +66,10 @@ class Entry < ApplicationRecord
 		uploads.find(data[key]) rescue nil
 	end
 
+  private
+
+  def should_generate_new_friendly_id?
+    slug.blank?
+  end
+
 end
