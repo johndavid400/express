@@ -18,7 +18,7 @@ class Express::EntriesController < Express::ApplicationController
 
   # GET /entries/new
   def new
-    @entry = channel.present? ? Entry.new(channel_id: channel.id) : Entry.new
+    @entry = channel.present? ? Entry.new(channel_id: channel.id, data: channel.data_fields) : Entry.new
   end
 
   # GET /entries/1/edit
@@ -29,7 +29,6 @@ class Express::EntriesController < Express::ApplicationController
   # POST /entries.json
   def create
     @entry = Entry.new(entry_params)
-
     respond_to do |format|
       if @entry.save
         format.html { redirect_to express.edit_entry_path(@entry), notice: 'Entry was successfully created.' }
@@ -76,15 +75,15 @@ class Express::EntriesController < Express::ApplicationController
       params.require(:entry).permit(:title, :slug, :description, :data, :status, :open, :close, :user_id, :channel_id, :attachment)
     end
 
-    def set_data
-      data = params[:entry][:data]
-      @entry.data = data
-      handle_uploads
-      @entry.save if @entry.changed?
+    def data_params
+      params.require(:entry).permit(:data => channel.data_keys)
     end
 
-    def channel
-      Channel.find(params[:channel_id]) rescue nil
+    def set_data
+      data = channel.data_fields
+      @entry.data = data.merge(data_params[:data])
+      handle_uploads
+      @entry.save if @entry.changed?
     end
 
     def handle_uploads
@@ -98,6 +97,16 @@ class Express::EntriesController < Express::ApplicationController
           @entry.data[attachment["key"]] = upload.id
         end
       end
+    end
+
+    def channel
+      if params[:channel_id].present?
+        Channel.find(params[:channel_id])
+      else
+        @entry.channel
+      end
+    rescue
+      nil
     end
 
 end

@@ -10,7 +10,7 @@
     .col-md-12
       .form-group
         .label-tag Channel
-        = f.select :channel_id, options_from_collection_for_select(Channel.all, :id, :title, selected: @entry.channel_id), :class => "form-control"
+        = f.select :channel_id, options_from_collection_for_select(current_site.channels, :id, :title, selected: @entry.channel_id), :class => "form-control"
     .col-md-6
       .form-group
         .label-tag Title

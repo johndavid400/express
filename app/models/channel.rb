@@ -28,4 +28,12 @@ class Channel < ApplicationRecord
     data["custom_fields"] rescue {}
   end
 
+  def data_fields
+    data["custom_fields"].map{|s| [s["key"], ""] }.to_h
+  end
+
+  def data_keys
+    data["custom_fields"].map{|s| s["key"].to_sym }
+  end
+
 end

@@ -1,10 +1,19 @@
 class Entry < ApplicationRecord
   validates_presence_of :title
-  extend FriendlyId
-  friendly_id :title, use: [:slugged, :finders]
-  dragonfly_accessor :attachment
   belongs_to :channel
 	has_many :uploads
+  has_one :site, through: :channel
+
+  extend FriendlyId
+  friendly_id :title, use: [:slugged, :finders]
+
+  dragonfly_accessor :attachment #do
+#    storage_options do |attachment|
+#      {
+#        path: "#{site.slug}/#{channel.slug}/#{slug}"
+#      }
+#    end
+#  end
 
   include PgSearch
   pg_search_scope :search,
@@ -45,11 +54,7 @@ class Entry < ApplicationRecord
 
   def method_missing(*args)
 		# allows calling undefined json data keys as methods on entries - if none exists, resort to original method_missing error
-		if get_data(args).present?
-		  get_data(args)
-    else
-      super
-    end
+    get_data(args).nil? ? super : get_data(args)
   end
 
   def get_data(key)
