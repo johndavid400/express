@@ -5,6 +5,7 @@ module Express
     before_action :verify_admin, :set_title, :set_site
 
     def verify_admin
+      @logout_link = "/logout"
       # override this in the host application to require some credentials
       redirect_to root_path, alert: "Admin access required" unless true
     end
