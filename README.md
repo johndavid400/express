@@ -17,11 +17,13 @@ Fontawesome
 
 ## Usage
 
-There are 4 data models:
+There are 5 data models:
 
-#### Channel, Entry, Setting, and Attachment
+#### Site, Channel, Entry, Setting, and Attachment
 
-Channels have many entries and are used to organize content.
+Sites have many channels and are used to organize channels.
+
+Channels have many entries and are used to organize content and build dynamic form fields for entries.
 
 Entries are the content records and belong to a channel.
 
