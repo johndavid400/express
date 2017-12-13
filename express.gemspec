@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'rspec-rails'
   s.add_dependency 'friendly_id', '~> 5.1.0'
   s.add_dependency 'dragonfly', '~> 1.1.3'
+  s.add_dependency 'dragonfly-s3_data_store'
   s.add_dependency "font-awesome-rails"
   s.add_dependency 'capybara'
   s.add_dependency 'factory_girl_rails'

@@ -19,7 +19,7 @@
 
       - elsif cf["type"] == "file_field"
         = send("#{cf['type']}_tag", "entry[uploads][#{cf['key']}]", required: ActiveModel::Type::Boolean.new.cast(cf['required']), :class => "form-control")
-        = hidden_field_tag "entry[data][#{cf['key']}]", @entry.send(cf['key']) if @entry.send(cf['key']).present?
+        = hidden_field_tag "entry[data][#{cf['key']}]", @entry.get_data(cf['key'])
         .entry-img
           = image_tag @entry.find_upload(cf['key']).attachment.thumb('x200').url if @entry.find_upload(cf['key']).present? rescue "Image Failed"
 
