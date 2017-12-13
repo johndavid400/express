@@ -16,11 +16,13 @@ module Express
     def search
       if params[:search].present? || params[:channel_id].present?
         klass = params[:resource].classify.constantize
-        @list = klass.order(created_at: :desc)
+        if ["entries", "channels"].include?(params[:resource])
+          @list = current_site.send(params[:resource])
+        else
+          @list = klass.order(created_at: :desc)
+        end
         @list = @list.where(channel_id: params[:channel_id]) if params[:channel_id].present?
         @list = @list.search(params[:search]) if params[:search].present?
-      binding.pry
-        @list = @list.from_site(current_site.id) if ["entries", "channels"].include?(params[:resource])
         render 'express/shared/search'
       end
     end
