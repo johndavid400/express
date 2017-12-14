@@ -1,14 +1,13 @@
 class Express::EntriesController < Express::ApplicationController
   before_action :set_entry, only: [:show, :edit, :update, :destroy]
+  before_action :set_channel
   before_action :validate_user, only: [:index, :show]
   after_action :set_data, only: [:create, :update]
-  #after_action :handle_uploads, only: [:create, :update]
 
   # GET /entries
   # GET /entries.json
   def index
-    @entries = current_site.entries.order(:created_at)
-    @entries = @entries.where(channel_id: params[:channel]) if params[:channel].present?
+    @entries = @channel.entries.order(:created_at)
   end
 
   # GET /entries/1
@@ -18,7 +17,7 @@ class Express::EntriesController < Express::ApplicationController
 
   # GET /entries/new
   def new
-    @entry = channel.present? ? Entry.new(channel_id: channel.id, data: channel.data_fields) : Entry.new
+    @entry = @channel.entries.new(data: channel.data_fields)
   end
 
   # GET /entries/1/edit
@@ -31,7 +30,7 @@ class Express::EntriesController < Express::ApplicationController
     @entry = Entry.new(entry_params)
     respond_to do |format|
       if @entry.save
-        format.html { redirect_to express.edit_entry_path(@entry), notice: 'Entry was successfully created.' }
+        format.html { redirect_to express.edit_channel_entry_path(@channel, @entry), notice: 'Entry was successfully created.' }
         format.json { render :show, status: :created, location: @entry }
       else
         format.html { render :new }
@@ -45,7 +44,7 @@ class Express::EntriesController < Express::ApplicationController
   def update
     respond_to do |format|
       if @entry.update(entry_params)
-        format.html { redirect_to express.edit_entry_path(@entry), notice: 'Entry was successfully updated.' }
+        format.html { redirect_to express.edit_channel_entry_path(@channel, @entry), notice: 'Entry was successfully updated.' }
         format.json { render :show, status: :ok, location: @entry }
       else
         format.html { render :edit }
@@ -76,18 +75,18 @@ class Express::EntriesController < Express::ApplicationController
     end
 
     def data_params
-      params.require(:entry).permit(:data => channel.data_keys)
+      params.require(:entry).permit(:data => @channel.data_keys)
     end
 
     def set_data
-      data = channel.data_fields
+      data = @channel.data_fields
       @entry.data = data.merge(data_params[:data])
       handle_uploads
       @entry.save if @entry.changed?
     end
 
     def handle_uploads
-      attachments = @entry.channel.custom_fields.select{|s| s["type"] == "file_field" }
+      attachments = @channel.custom_fields.select{|s| s["type"] == "file_field" }
       attachments.each do |attachment|
         file = params["entry"]["uploads"][attachment["key"]] rescue nil
         if file.present?
@@ -97,16 +96,6 @@ class Express::EntriesController < Express::ApplicationController
           @entry.data[attachment["key"]] = upload.id
         end
       end
-    end
-
-    def channel
-      if params[:channel_id].present?
-        Channel.find(params[:channel_id])
-      else
-        @entry.channel
-      end
-    rescue
-      nil
     end
 
 end

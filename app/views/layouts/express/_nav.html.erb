@@ -49,20 +49,17 @@
           </li>
         <% end %>
         <li>
-          <%= link_to "#{fa_icon('dashboard', :class => "fa-fw")} Dashboard".html_safe, express.entries_path  %>
+          <%= link_to "#{fa_icon('filter', :class => "fa-fw")} Channels".html_safe, express.channels_path  %>
         </li>
         <li>
-          <%= link_to "#{fa_icon('bar-chart-o', :class => "fa-fw")} Entries<span class='fa arrow'></span>".html_safe, express.entries_path %>
+          <%= link_to "#{fa_icon('bar-chart-o', :class => "fa-fw")} Entries<span class='fa arrow'></span>".html_safe, "#" %>
           <ul class="nav nav-second-level">
             <%- current_site.channels.order(title: :asc).each do |channel| %>
               <li>
-                <%= link_to "#{fa_icon('plus', :class => "fa-fw")} #{channel.title.pluralize}".html_safe, express.entries_path(channel: channel.id) %>
+                <%= link_to "#{fa_icon('plus', :class => "fa-fw")} #{channel.title.pluralize}".html_safe, express.channel_entries_path(channel) %>
               </li>
             <% end %>
           </ul>
-        </li>
-        <li>
-          <%= link_to "#{fa_icon('filter', :class => "fa-fw")} Channels".html_safe, express.channels_path  %>
         </li>
         <li>
           <%= link_to "#{fa_icon('gear', :class => "fa-fw")} Settings".html_safe, express.settings_path  %>

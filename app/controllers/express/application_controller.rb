@@ -36,5 +36,10 @@ module Express
       current_user.present? && current_user.can_manage?(@site)
     end
 
+    def set_channel
+      id = params[:channel_id].present? ? params[:channel_id] : params[:id]
+      @channel = current_site.channels.friendly.find(id)
+    end
+
   end
 end
