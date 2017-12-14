@@ -1,1 +1,0 @@
-json.channels @resources
