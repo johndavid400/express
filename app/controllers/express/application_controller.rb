@@ -15,6 +15,7 @@ module Express
     end
 
     def search
+      @channel = Channel.friendly.find(params[:channel_id]) if params[:channel_id].present?
       if params[:search].present? || params[:channel_id].present?
         klass = params[:resource].classify.constantize
         if ["entries", "channels"].include?(params[:resource])
