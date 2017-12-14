@@ -3,7 +3,7 @@ class Channel < ApplicationRecord
   extend FriendlyId
   friendly_id :title, use: [:slugged, :finders]
   dragonfly_accessor :attachment
-  has_many :entries
+  has_many :entries, dependent: :destroy
   belongs_to :site
 
   include PgSearch
