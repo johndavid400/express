@@ -3,13 +3,13 @@ class Express::Api::ApiController < ActionController::Base
   before_action :verify_key, :set_format
 
   def index
-    @resources = @site.send(klass)
+    @resources = @site.send(klass).open
     @klass = klass
     render 'express/api/v1/shared/index'
   end
 
   def show
-    @resource = @site.send(klass).find(params[:id])
+    @resource = @site.send(klass).open.find(params[:id])
     @klass = klass.singularize
     render 'express/api/v1/shared/show'
   end
