@@ -23,4 +23,10 @@ class Setting < ApplicationRecord
     options.map{|s| [s["key"], s["value"]] }
   end
 
+  private
+
+  def should_generate_new_friendly_id?
+    slug.blank?
+  end
+
 end

@@ -36,6 +36,11 @@ class Entry < ApplicationRecord
     title
   end
 
+  def user
+    # override this method in host application
+    "Admin"
+  end
+
   def self.method_missing(*args)
 		# allow class method to get entries of a given entry type, if exists
 		if Channel.pluck(:slug).include?(args.first.to_s)
@@ -43,11 +48,6 @@ class Entry < ApplicationRecord
 		else
 			super
 		end
-  end
-
-  def user
-    # override this method in host application
-    "Admin"
   end
 
   def method_missing(*args)
