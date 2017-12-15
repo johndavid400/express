@@ -11,4 +11,8 @@ class Upload < ApplicationRecord
 #    end
 #  end
 
+  def attachment_url
+    [ENV["EXPRESS_IMAGE_BASE_URL"], attachment_uid].join
+  end
+
 end

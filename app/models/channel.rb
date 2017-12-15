@@ -16,6 +16,9 @@ class Channel < ApplicationRecord
       :tsearch => {:prefix => true}
     }
 
+  scope :open,  -> { where(status: "open") }
+  scope :closed,  -> { where(status: "closed") }
+
   def self.from_site(site_id)
     where(site_id: site_id)
   end
@@ -34,6 +37,10 @@ class Channel < ApplicationRecord
 
   def data_keys
     data["custom_fields"].map{|s| s["key"].to_sym }
+  end
+
+  def as_json(options = {})
+    super(options.merge(:methods => [:attachment_url]))
   end
 
   private

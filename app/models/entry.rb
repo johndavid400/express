@@ -25,6 +25,9 @@ class Entry < ApplicationRecord
       :tsearch => {:prefix => true}
     }
 
+  scope :open,  -> { where(status: "open") }
+  scope :closed,  -> { where(status: "closed") }
+
   def self.from_site(site_id)
     #channel_ids = Channel.pluck(:id).uniq
     #where(channel_id: channel_ids)
@@ -34,14 +37,6 @@ class Entry < ApplicationRecord
   def to_s
     title
   end
-
-	def self.open
-		where(status: 'open')
-	end
-
-	def self.closed
-		where(status: 'closed')
-	end
 
   def self.method_missing(*args)
 		# allow class method to get entries of a given entry type, if exists
@@ -65,6 +60,26 @@ class Entry < ApplicationRecord
 	def find_upload(key)
 		uploads.find(data[key]) rescue nil
 	end
+
+  def attachment_url
+    [ENV["EXPRESS_IMAGE_BASE_URL"], attachment_uid].join
+  end
+
+  def custom
+    data.merge(data_upload_urls)
+  end
+
+  def data_upload_keys
+    channel.data["custom_fields"].select{|s| s["type"] == "file_field" }.map{|s| s["key"] }
+  end
+
+  def data_upload_urls
+    data.select{|k,v| data_upload_keys.include?(k) }.map{|k,v| [k, Upload.find(v).attachment_url] }.to_h
+  end
+
+  def as_json(options = {})
+    super(options.merge(:except => [:data], :methods => [:attachment_url, :custom]))
+  end
 
   private
 
