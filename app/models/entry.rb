@@ -3,7 +3,6 @@ class Entry < ApplicationRecord
   belongs_to :channel
 	has_many :uploads, dependent: :destroy
   has_one :site, through: :channel
-  belongs_to :user
 
   extend FriendlyId
   friendly_id :title, use: [:slugged, :finders]
@@ -44,6 +43,11 @@ class Entry < ApplicationRecord
 		else
 			super
 		end
+  end
+
+  def user
+    # override this method in host application
+    "Admin"
   end
 
   def method_missing(*args)

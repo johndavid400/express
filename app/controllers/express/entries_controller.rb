@@ -81,9 +81,11 @@ class Express::EntriesController < Express::ApplicationController
 
     def set_data
       data = @channel.data_fields
-      @entry.data = data.merge(data_params[:data])
-      handle_uploads
-      @entry.save if @entry.changed?
+      if data.present?
+        @entry.data = data.merge(data_params[:data])
+        handle_uploads
+        @entry.save if @entry.changed?
+      end
     end
 
     def handle_uploads
