@@ -3,7 +3,7 @@
     %td= link_to entry.title, express.edit_channel_entry_path(@channel, entry)
     %td= entry.slug
     %td= entry.status
-    %td= entry.user_id
+    %td= entry.user
     %td= entry.channel
     %td= link_to fa_icon("times"), express.channel_entry_path(@channel, entry), method: :delete, class: "red", data: { confirm: 'Are you sure?' }
 

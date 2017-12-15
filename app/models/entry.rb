@@ -3,6 +3,7 @@ class Entry < ApplicationRecord
   belongs_to :channel
 	has_many :uploads, dependent: :destroy
   has_one :site, through: :channel
+  belongs_to :user
 
   extend FriendlyId
   friendly_id :title, use: [:slugged, :finders]
@@ -29,8 +30,6 @@ class Entry < ApplicationRecord
   scope :closed,  -> { where(status: "closed") }
 
   def self.from_site(site_id)
-    #channel_ids = Channel.pluck(:id).uniq
-    #where(channel_id: channel_ids)
     self.includes(:channel).where(channels: {site_id: site_id})
   end
 

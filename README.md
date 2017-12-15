@@ -53,6 +53,16 @@ mount Express::Engine => "/admin"
 
 Note: Change '/admin' to wherever you want to access the CMS pages.
 
+Then copy migrations:
+```bash
+rake highlands_auth:install:migrations
+```
+
+And migrate db:
+```bash
+rake db:migrate
+```
+
 
 ## Contributing
 Submit a pull request.
