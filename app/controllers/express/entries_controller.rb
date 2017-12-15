@@ -17,7 +17,7 @@ class Express::EntriesController < Express::ApplicationController
 
   # GET /entries/new
   def new
-    @entry = @channel.entries.new(data: channel.data_fields)
+    @entry = @channel.entries.new(data: @channel.data_fields)
   end
 
   # GET /entries/1/edit
@@ -28,6 +28,7 @@ class Express::EntriesController < Express::ApplicationController
   # POST /entries.json
   def create
     @entry = Entry.new(entry_params)
+    @entry.user_id = current_user.try(:id) rescue nil
     respond_to do |format|
       if @entry.save
         format.html { redirect_to express.edit_channel_entry_path(@channel, @entry), notice: 'Entry was successfully created.' }

@@ -1,7 +1,9 @@
 class User
   # create some methods to override in host application
+  attr_accessor :id
 
   def initiate
+    @id = nil
   end
 
   def can_manage?(site)
