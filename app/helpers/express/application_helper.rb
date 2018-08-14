@@ -1,6 +1,5 @@
 module Express
   module ApplicationHelper
-    include FontAwesome::Rails::IconHelper
 
     def current_site
       cs = cookies.permanent.signed[:site_id]
@@ -46,6 +45,10 @@ module Express
 
     def channel_name(id)
       Channel.find(id) rescue "Entry"
+    end
+
+    def fa_icon(icon, options = nil)
+      "<i class='fas fa-#{icon} #{options[:class] if options.present? && options[:class].present?}'></i>".html_safe
     end
 
   end

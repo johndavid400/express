@@ -52,7 +52,7 @@
           <%= link_to "#{fa_icon('filter', :class => "fa-fw")} Channels".html_safe, express.channels_path  %>
         </li>
         <li>
-          <%= link_to "#{fa_icon('bar-chart-o', :class => "fa-fw")} Entries<span class='fa arrow'></span>".html_safe, "#" %>
+          <%= link_to "#{fa_icon('chart-bar', :class => "fa-fw")} Entries<span class='fa arrow'></span>".html_safe, "#" %>
           <ul class="nav nav-second-level">
             <%- current_site.channels.order(title: :asc).each do |channel| %>
               <li>
@@ -62,7 +62,7 @@
           </ul>
         </li>
         <li>
-          <%= link_to "#{fa_icon('gear', :class => "fa-fw")} Settings".html_safe, express.settings_path  %>
+          <%= link_to "#{fa_icon('cogs', :class => "fa-fw")} Settings".html_safe, express.settings_path  %>
         </li>
         <li>
           <%= link_to "#{fa_icon('rocket', :class => "fa-fw")} View Site".html_safe, main_app.root_path %>
