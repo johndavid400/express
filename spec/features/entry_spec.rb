@@ -8,7 +8,7 @@ feature 'entry' do
 
   scenario 'can create an entry' do
     visit express.channels_path
-    expect(page).to have_no_content('Listing Channels')
+    expect(page).to have_content('Listing Channels')
   end
 
 end

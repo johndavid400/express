@@ -1,10 +1,17 @@
 FactoryGirl.define do
 
+  factory :site do
+    name "My Site"
+    slug "test-site"
+    description "Descriptive stuff right here"
+  end
+
   factory :channel do
     title "Test Channel"
     slug "test-channel"
     description "Descriptive stuff right here"
     status "open"
+    site_id {FactoryGirl.create(:site).id}
     #data {"custom_fields"=>[{"foo"=>"bar"}]}
   end
 

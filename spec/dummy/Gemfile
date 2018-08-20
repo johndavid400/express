@@ -1,3 +1,6 @@
 source 'http://rubygems.org'
 
 gem "font-awesome-rails"
+
+gem 'haml-rails'
+
