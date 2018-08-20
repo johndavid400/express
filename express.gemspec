@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'dragonfly-s3_data_store'
 #  s.add_dependency "font-awesome-rails"
   s.add_dependency 'capybara'
+  s.add_dependency 'launchy'
   s.add_dependency 'factory_girl_rails'
   s.add_dependency 'simplecov'
   s.add_dependency 'shoulda-matchers'

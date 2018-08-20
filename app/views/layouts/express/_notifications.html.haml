@@ -1,0 +1,7 @@
+.alerts
+  %center
+    - if notice
+      %p.alert-box.notice= notice.html_safe
+    - if alert
+      %p.alert-box= alert.html_safe
+

@@ -3,10 +3,30 @@
 $gray: #f3f3f3;
 $border-gray: #dcdcdc;
 $green: rgba(87, 196, 51, 1.0);
-
-// Custom styles
+$green-alert: rgba(87, 196, 51, 1.0);
+$red-alert: rgba(255, 100, 100, 1.0);
+$white: white;
 
 .express {
+
+  .alerts {
+    margin: 0 -30px;
+    .alert-box {
+      background: $red-alert;
+      color: $white;
+      font-size: 1.2em;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: none;
+      position: relative;
+      z-index: 5;
+      margin-bottom: 0px;
+    }
+    .notice {
+      background: $green-alert;
+    }
+  }
+
 
   .admin-nav {
     margin-top: 20px;

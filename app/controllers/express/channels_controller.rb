@@ -30,7 +30,7 @@ class Express::ChannelsController < Express::ApplicationController
 
     respond_to do |format|
       if @channel.save
-        format.html { redirect_to express.edit_channel_path(@channel), notice: 'Entry type was successfully created.' }
+        format.html { redirect_to express.edit_channel_path(@channel), notice: 'Channel was successfully created.' }
         format.json { render :show, status: :created, location: @channel }
       else
         format.html { render :new }
@@ -44,7 +44,7 @@ class Express::ChannelsController < Express::ApplicationController
   def update
     respond_to do |format|
       if @channel.update(channel_params)
-        format.html { redirect_to express.edit_channel_path(@channel), notice: 'Entry type was successfully updated.' }
+        format.html { redirect_to express.edit_channel_path(@channel), notice: 'Channel was successfully updated.' }
         format.json { render :show, status: :ok, location: @channel }
       else
         format.html { render :edit }
@@ -58,7 +58,7 @@ class Express::ChannelsController < Express::ApplicationController
   def destroy
     @channel.destroy
     respond_to do |format|
-      format.html { redirect_to express.channels_url, notice: 'Entry type was successfully destroyed.' }
+      format.html { redirect_to express.channels_url, notice: 'Channel was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

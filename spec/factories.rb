@@ -26,7 +26,7 @@ FactoryGirl.define do
   end
 
   factory :setting do
-    title "Test Setting"
+    name "Test Setting"
     slug "test-setting"
     description "Descriptive stuff right here"
     #data {"options"=>[{"key"=>"Yes", "value"=>"yes"}, {"key"=>"No", "value"=>"no"}]}

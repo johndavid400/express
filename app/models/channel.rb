@@ -32,11 +32,11 @@ class Channel < ApplicationRecord
   end
 
   def data_fields
-    data["custom_fields"].map{|s| [s["key"], ""] }.to_h
+    data["custom_fields"].map{|s| [s["key"], ""] }.to_h rescue []
   end
 
   def data_keys
-    data["custom_fields"].map{|s| s["key"].to_sym }
+    data["custom_fields"].map{|s| s["key"].to_sym } rescue []
   end
 
   def as_json(options = {})
