@@ -4,7 +4,7 @@ class Express::SitesController < Express::ApplicationController
   # GET /sites
   # GET /sites.json
   def index
-    @sites = Site.all
+    @list = Site.all
   end
 
   # GET /sites/1

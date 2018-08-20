@@ -29,4 +29,12 @@ feature 'entry' do
     expect(page).to have_content('Entry was successfully updated')
   end
 
+  scenario 'can search for entry' do
+    entry = create(:entry, title: "Searchable", channel_id: @channel.id)
+    visit express.channel_entries_path(@channel)
+    fill_in("search", with: "Searchable")
+    click_button('express-search')
+    expect(page).to have_content('Searchable')
+  end
+
 end

@@ -1,1 +1,1 @@
-json.array! @settings, partial: 'settings/setting', as: :setting
+json.array! @list, partial: 'settings/setting', as: :setting

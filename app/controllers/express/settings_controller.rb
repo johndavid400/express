@@ -5,7 +5,7 @@ class Express::SettingsController < Express::ApplicationController
   # GET /settings
   # GET /settings.json
   def index
-    @settings = Setting.all
+    @list = Setting.all
   end
 
   # GET /settings/1

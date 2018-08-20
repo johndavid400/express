@@ -41,7 +41,7 @@
               <%= hidden_field_tag 'channel_id', @channel.id if @channel.present? %>
               <%= hidden_field_tag 'resource', params[:controller].gsub("express/", "") %>
               <span class="input-group-btn">
-                <button class="btn btn-default" type="submit" name="commit">
+                <button class="btn btn-default" id="express-search" type="submit" name="commit">
                   <i class="fa fa-search"></i>
                 </button>
               </span>

@@ -6,7 +6,7 @@ class Express::ChannelsController < Express::ApplicationController
   # GET /channels
   # GET /channels.json
   def index
-    @channels = current_site.channels.order(title: :asc)
+    @list = current_site.channels.order(title: :asc)
   end
 
   # GET /channels/1

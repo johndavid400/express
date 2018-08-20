@@ -7,7 +7,7 @@ class Express::EntriesController < Express::ApplicationController
   # GET /entries
   # GET /entries.json
   def index
-    @entries = @channel.entries.order(:created_at)
+    @list = @channel.entries.order(:created_at)
   end
 
   # GET /entries/1

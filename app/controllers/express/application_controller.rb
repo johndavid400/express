@@ -25,7 +25,11 @@ module Express
         end
         @list = @list.where(channel_id: params[:channel_id]) if params[:channel_id].present?
         @list = @list.search(params[:search]) if params[:search].present?
-        render 'express/shared/search'
+        if request.format.js?
+          render 'express/shared/search'
+        else
+          render template: "express/#{params[:resource]}/index.html.haml"
+        end
       end
     end
 
