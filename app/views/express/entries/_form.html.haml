@@ -48,8 +48,8 @@
     .col-md-12
       - if @channel.present? && @channel.custom_fields.present?
         .label-tag Custom Fields
-        .panel
-          - @channel.custom_fields.each do |cf|
+        - @channel.custom_fields.each do |cf|
+          .panel
             = render 'custom_fields', cf: cf
   .actions
     %hr

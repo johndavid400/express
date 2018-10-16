@@ -22,10 +22,11 @@
 
     .col-md-12
       .label-tag Collection Options
-      .panel
-        .custom-fields
-          - @setting.options.each do |cf|
+      .custom-fields
+        - @setting.options.each do |cf|
+          .panel
             = render 'custom_form_field', data: cf
+        .panel
           = render 'custom_form_field', data: {}
 
       .actions

@@ -31,13 +31,12 @@
         = image_tag @channel.attachment.thumb('200x200!').url if @channel.attachment_stored?
     .col-md-12
       .label-tag Custom Fields
-      .panel
-        .custom-fields
-          - @channel.custom_fields.each do |cf|
-            .custom-field
-              = render 'custom_form_field', data: cf
-          .custom-field
-            = render 'custom_form_field', data: {}
+      .custom-fields
+        - @channel.custom_fields.each do |cf|
+          .custom-field.panel
+            = render 'custom_form_field', data: cf
+        .custom-field.panel
+          = render 'custom_form_field', data: {}
   .actions
     = f.submit 'Save', :class => "btn btn-primary"
 

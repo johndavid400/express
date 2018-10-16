@@ -28,6 +28,14 @@ class Entry < ApplicationRecord
   scope :open,  -> { where(status: "open") }
   scope :closed,  -> { where(status: "closed") }
 
+  def self.available
+    time = Time.now
+    # query the entries that are currently 'open' OR have not open/close dates set.
+    query = "SELECT * FROM entries WHERE (open <= '#{time}' AND close >= '#{time}') OR (open IS NULL AND close IS NULL)"
+    # scope this query to entries whose status = open
+    open.find_by_sql(query)
+  end
+
   def self.from_site(site_id)
     self.includes(:channel).where(channels: {site_id: site_id})
   end
