@@ -44,6 +44,7 @@ class Express::EntriesController < Express::ApplicationController
   # PATCH/PUT /entries/1.json
   def update
     respond_to do |format|
+      @entry.user_id = current_user.id if @entry.user_id.nil?
       if @entry.update(entry_params)
         format.html { redirect_to express.edit_channel_entry_path(@channel, @entry), notice: 'Entry was successfully updated.' }
         format.json { render :show, status: :ok, location: @entry }
