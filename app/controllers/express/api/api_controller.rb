@@ -14,6 +14,8 @@ class Express::Api::ApiController < ActionController::Base
     render 'express/api/v1/shared/show'
   end
 
+  # TODO add new, create, edit, update, and destroy methods
+  
   private
 
   def verify_key
