@@ -1,7 +1,7 @@
 class Entry < ApplicationRecord
   validates_presence_of :title
   belongs_to :channel
-	has_many :uploads, dependent: :destroy
+  has_many :uploads, dependent: :destroy
   has_one :site, through: :channel
 
   extend FriendlyId
