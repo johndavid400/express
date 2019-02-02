@@ -55,7 +55,7 @@ Note: Change '/admin' to wherever you want to access the CMS pages.
 
 Then copy migrations:
 ```bash
-rake highlands_auth:install:migrations
+rake express:install:migrations
 ```
 
 And migrate db:
